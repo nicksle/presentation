@@ -1,0 +1,49 @@
+.callouts-root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 100%;
+  max-width: 1200px;
+  margin: var(--spacing-xl) auto 0;
+  align-items: start;
+}
+
+.callouts-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 100%;
+}
+
+.callouts-title {
+  font-size: var(--font-size-title-base);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.callouts-description {
+  font-size: var(--font-size-body-sm);
+  color: var(--color-tertiary);
+  margin: 0;
+}
+
+.callouts-body {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-lg);
+  overflow-x: auto;
+  padding-bottom: var(--spacing-sm); /* Optional: for scroll bar spacing */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-inactive) var(--color-base);
+}
+
+.callouts-body::-webkit-scrollbar {
+  height: var(--spacing-sm);
+}
+.callouts-body::-webkit-scrollbar-thumb {
+  background: var(--color-inactive);
+  border-radius: var(--border-radius-small);
+}
+.callouts-body::-webkit-scrollbar-track {
+  background: var(--color-base);
+}

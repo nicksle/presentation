@@ -1,0 +1,104 @@
+.callout-item-root {
+  width: 100%;         /* Fill the width of the parent container */
+  min-width: 0;        /* Allow shrinking in a flex or grid container */
+  max-width: 100%;     /* Prevent overflow */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: var(--spacing-xxl);
+}
+
+.callout-item-index {
+  min-width: 40px;
+  text-align: left;
+  margin-right: 0;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-secondary);
+  /* Use the global S1 class for font style */
+}
+
+.callout-item-indent {
+  padding-left: var(--spacing-md);
+  flex: 1;
+}
+
+.callout-item-card-frame {
+  overflow: hidden;
+  background: var(--color-base);
+  display: flex;
+  flex-direction: column;
+}
+
+.callout-item-card-head {
+  border: 1px solid var(--color-inactive, #30302a);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-lg);
+  gap: var(--spacing-lg);
+}
+
+.callout-item-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.callout-item-title {
+  color: var(--color-primary);
+}
+
+.callout-item-description {
+  color: var(--color-secondary);
+}
+
+.callout-item-cta {
+  width: 100%;
+  height: var(--button-height, 64px);
+  border: 1px solid var(--color-inactive, #30302a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-xl);
+  cursor: pointer;
+  transition: var(--transition-fast, all 0.3s ease);
+  user-select: none;
+}
+
+.callout-item-cta:hover {
+  background-color: var(--color-hover, #1e1e1e);
+  border-color: var(--color-primary, #ffffe3);
+}
+
+.callout-item-cta:hover .callout-item-cta-text {
+  color: var(--color-primary, #ffffe3) !important;
+}
+
+.callout-item-cta:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.callout-item-cta:active {
+  transform: translateY(1px);
+  transition: transform 0.1s ease;
+}
+
+.callout-item-cta-text {
+  /* S1 style is applied via class */
+  transition: var(--transition-fast, all 0.3s ease);
+  font-weight: var(--font-weight-medium, 500);
+  letter-spacing: 0.5px;
+}
+
+.callout-item-cta.clickable {
+  cursor: pointer;
+}
+
+.callout-item-cta.clickable:hover {
+  background-color: var(--color-hover, #1e1e1e);
+  border-color: var(--color-primary, #ffffe3);
+}
+
+.callout-item-cta.clickable:hover .callout-item-cta-text {
+  color: var(--color-primary, #ffffe3) !important;
+}

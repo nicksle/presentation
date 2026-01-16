@@ -1,0 +1,25 @@
+.title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 1200px;
+  margin: var(--spacing-xl) auto 0;
+}
+
+.title-section-head {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-section-title {
+  font-size: var(--font-size-title-base);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.title-section-body {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}

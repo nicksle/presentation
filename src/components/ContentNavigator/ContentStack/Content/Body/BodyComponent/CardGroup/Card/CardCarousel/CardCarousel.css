@@ -1,0 +1,151 @@
+.card-carousel {
+  height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.card-carousel-head-stack {
+  position: relative;
+  flex-shrink: 0;
+  z-index: 10;
+  height: 86px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* When menu is open, expand height and enable scrolling */
+.card-carousel-head-stack.menu-open {
+  height: var(--card-height-default, 540px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Custom scrollbar styling for the menu */
+.card-carousel-head-stack.menu-open::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card-carousel-head-stack.menu-open::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.card-carousel-head-stack.menu-open::-webkit-scrollbar-thumb {
+  background: var(--color-tertiary, #999988);
+  border-radius: 3px;
+}
+
+.card-carousel-head-stack.menu-open::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary, #cccccc);
+}
+
+/* Smooth animation for menu expansion */
+.card-carousel-head-stack {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-carousel-head-stack.menu-expanding {
+  animation-name: menuExpand;
+}
+
+.card-carousel-head-stack.menu-collapsing {
+  animation-name: menuCollapse;
+}
+
+@keyframes menuExpand {
+  from {
+    height: 86px;
+  }
+  to {
+    height: var(--target-height);
+  }
+}
+
+@keyframes menuCollapse {
+  from {
+    height: var(--target-height);
+  }
+  to {
+    height: 86px;
+  }
+}
+
+/* Hover state applied to the entire head stack */
+.card-carousel-head-stack:hover {
+  background: var(--color-hover, #1e1e1e);
+}
+
+/* Ensure the active head item gets the hover background when parent is hovered */
+.card-carousel-head-stack:hover .head-item.active {
+  background: var(--color-hover, #1e1e1e);
+}
+
+/* The card-frame:hover .card-head rule in Card.css will handle the border color change
+   when hovering anywhere in the card head area, including the head stack */
+
+.card-carousel-body-stack {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  gap: 32px;
+  margin: 12px;
+}
+
+/* Collapse Button Styles */
+.card-carousel-collapse-button {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  padding: 0 24px;
+}
+
+.collapse-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--color-inactive, #30302a);
+  border: 1px solid var(--color-inactive, #30302a);
+  border-radius: 4px;
+  color: var(--color-tertiary, #999988);
+  font-family: var(--font-family-subtitle);
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.collapse-btn:hover {
+  background: var(--color-hover, #1e1e1e);
+  border-color: var(--color-primary, #ffffe3);
+  color: var(--color-primary, #ffffe3);
+}
+
+.collapse-btn:active {
+  transform: translateY(1px);
+}
+
+.collapse-btn-text {
+  white-space: nowrap;
+}
+
+.collapse-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.collapse-btn:hover .collapse-btn-icon {
+  transform: translateY(-1px);
+}

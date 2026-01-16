@@ -1,0 +1,89 @@
+.head {
+  padding: 0 24px;
+  box-sizing: border-box;
+  background: var(--color-base, #0e0e10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-top, .head-bottom {
+  height: var(--head-row-height, 16px);
+  min-height: var(--head-row-height, 16px);
+  max-height: var(--head-row-height, 16px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head-title {
+  height: var(--head-title-height, 48px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: var(--spacing-lg, 16px);
+}
+
+.head-title span {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+/* Text Style Classes */
+.head-text-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-title-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.head-text-subtitle {
+  font-family: var(--font-family-subtitle);
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-tertiary);
+  line-height: 1.2;
+}
+
+/* Icon styling - exactly like Card and Tile components */
+.head-icon-wrapper {
+  width: var(--icon-size-small, 24px);
+  height: var(--icon-height-small, 16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-tertiary, #999988);
+}
+
+.head-icon-svg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head-icon-svg svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling for imported SVG files */
+.head-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

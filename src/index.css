@@ -1,0 +1,123 @@
+@import './design-tokens.css';
+
+:root {
+  /* Typography */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  color: var(--color-primary);
+}
+
+p {
+  margin-bottom: 1em;
+  color: var(--color-secondary);
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+/* === Global Font Text Styles === */
+
+/* Headings */
+.H1 {
+  font-family: 'Satoshi', Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0;
+  color: var(--color-active);
+}
+
+.H2 {
+  font-family: 'Satoshi', Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0;
+  color: var(--color-active);
+}
+
+.H3 {
+  font-family: 'Satoshi', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-active);
+}
+
+/* Body */
+.B1 {
+  font-family: 'Satoshi', Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: var(--secondary);
+}
+
+.B2 {
+  font-family: 'Satoshi', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--secondary);
+}
+
+/* Small */
+.S1 {
+  font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  color: var(--secondary);
+}
+
+/* Subtitle */
+.subtitle {
+  font-family: var(--font-family-subtitle);
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-secondary);
+  line-height: 1.2;
+}

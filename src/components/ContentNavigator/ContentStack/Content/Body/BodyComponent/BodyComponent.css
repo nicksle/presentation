@@ -1,0 +1,61 @@
+.body-component {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  gap: 16px;
+  height: fit-content;
+}
+
+.break-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-inactive);
+  margin: 24px 0;
+  opacity: 0.5;
+}
+
+.break-line.thin {
+  height: 1px;
+  margin: 16px 0;
+}
+
+.break-line.thick {
+  height: 2px;
+  margin: 32px 0;
+}
+
+.break-line.active {
+  background-color: var(--color-active);
+  opacity: 1;
+}
+
+.body-component.break-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-inactive);
+  margin: 24px 0;
+  opacity: 0.5;
+}
+
+.body-component.break-line.thin {
+  height: 1px;
+  margin: 16px 0;
+}
+
+.body-component.break-line.thick {
+  height: 2px;
+  margin: 32px 0;
+}
+
+.body-component.break-line.active {
+  background-color: var(--color-active);
+  opacity: 1;
+}
+
+/* Card Group Layout - for direct LayoutGroup usage */
+.card-group {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+  position: relative;
+}

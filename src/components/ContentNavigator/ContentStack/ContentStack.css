@@ -1,0 +1,66 @@
+.content-stack {
+  width: 100%;
+  height: calc(100vh - 132px); /* Optimized for 14-inch MacBook (~900px viewport) */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+  margin-top: -1px;
+  isolation: isolate; /* Creates a new stacking context */
+}
+
+.content-stack.transitioning {
+  pointer-events: none;
+}
+
+.content-stack-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  isolation: isolate; /* Creates a new stacking context for each wrapper */
+}
+
+.content-stack-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.content-stack-item {
+  position: relative;
+  width: 100%;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--color-inactive);
+  background: var(--base);
+}
+
+/* Stack positions */
+.content-stack-wrapper.stack-position-1 { z-index: 3; }
+.content-stack-wrapper.stack-position-2 { z-index: 2; }
+.content-stack-wrapper.stack-position-3 { z-index: 1; }
+
+.content-stack-item.active {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-color: var(--color-active);
+}
+
+/* Ensure content within stack items is properly positioned */
+.content-stack-item > * {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .content-stack {
+    height: calc(100vh - 100px); /* Slightly less space on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .content-stack {
+    height: calc(100vh - 80px); /* Even less space on mobile */
+  }
+} 

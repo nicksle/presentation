@@ -1,0 +1,103 @@
+.nav-tab-item {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  text-align: center;
+  padding: var(--spacing-lg, 16px);
+  background: var(--color-base, #0e0e10);
+  color: var(--color-secondary, #ccccb6);
+  cursor: pointer;
+  transition: var(--transition-fast, all 0.3s ease);
+  margin: 0 !important;
+  box-sizing: border-box;
+  min-width: 0;
+  border: 1px solid var(--color-inactive, #30302a);
+  z-index: 1;
+  position: relative;
+  min-height: 60px;
+}
+
+.nav-tab-item.active {
+  background: var(--color-primary, #ffffe3) !important;
+  border: 1px solid var(--color-primary, #ffffe3) !important;
+  z-index: 10;
+}
+
+.nav-tab-item.active .navtab-item-title {
+  color: var(--color-base, #0e0e10) !important;
+}
+
+.nav-tab-item.active .navtab-item-top span {
+  color: var(--color-base, #0e0e10) !important;
+}
+
+.nav-tab-item:hover,
+.nav-tab-item:focus {
+  z-index: 20;
+}
+
+.navtab-item-top {
+  height: var(--icon-height-small, 16px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.navtab-item-title {
+  height: var(--head-row-height, 16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: var(--font-size-body-xs, 16px);
+  font-family: inherit;
+  color: var(--color-primary, #ffffe3);
+}
+
+.navtab-item-bottom {
+  height: var(--icon-height-small, 16px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.navtab-eye-svg {
+  height: var(--icon-height-small, 16px);
+  width: auto;
+  transition: var(--transition-fast, all 0.3s ease);
+  opacity: 0.7;
+}
+
+/* Ensure the Icon component displays at the correct size */
+.navtab-eye-svg svg {
+  height: var(--icon-height-small, 16px);
+  width: var(--icon-height-small, 16px);
+  display: block;
+}
+
+.nav-tab-item.active .navtab-eye-svg {
+  opacity: 1;
+  filter: none;
+}
+
+.navtab-item-top span,
+.navtab-item-bottom svg {
+  color: var(--color-secondary, #ccccb6);
+  fill: var(--color-secondary, #ccccb6);
+  transition: var(--transition-fast, all 0.3s ease);
+}
+
+.nav-tab-item.active .navtab-item-top span,
+.nav-tab-item.active .navtab-item-bottom svg {
+  color: var(--color-base, #0e0e10);
+  fill: var(--color-base, #0e0e10);
+}
+
+.nav-tab-item:hover {
+  border-color: var(--color-primary, #ffffe3);
+  color: var(--color-primary, #ffffe3);
+} 

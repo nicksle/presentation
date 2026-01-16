@@ -1,0 +1,39 @@
+/* Slide Component Styles */
+
+.slide {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* slideHead - contains index and title */
+.slide-head {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  box-sizing: border-box;
+}
+
+.slide-head-index {
+  /* Uses .subtitle global class */
+}
+
+.slide-head-title {
+  margin-left: 12px;
+  font-weight: 700; /* Bold */
+  /* Uses .B1 global class */
+}
+
+/* slideBody - contains content */
+.slide-body {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+}

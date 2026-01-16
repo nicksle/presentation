@@ -1,0 +1,146 @@
+import React, { useState, Children, cloneElement } from 'react';
+import { motion } from 'framer-motion';
+import './Card.css';
+import Icon from '../../../../../../../../components/Icon';
+import { ICON_PATHS } from '../../../../../../../../utils/iconPaths';
+
+// Styles using CSS custom properties - consistent with Text component
+const textStyles = {
+  index: {
+    fontFamily: 'var(--font-family-subtitle)',
+    fontSize: 'var(--font-size-subtitle)',
+    fontWeight: 'var(--font-weight-medium)',
+    color: 'var(--color-tertiary)'
+  },
+  heading: {
+    fontFamily: 'var(--font-family-title)',
+    fontSize: 'var(--font-size-title-base)',
+    fontWeight: 'var(--font-weight-medium)',
+    color: 'var(--color-primary)'
+  },
+  body: {
+    fontFamily: 'var(--font-family-body)',
+    fontSize: 'var(--font-size-body-sm)',
+    fontWeight: 'var(--font-weight-regular)',
+    color: 'var(--color-primary)'
+  }
+};
+
+const Card = ({ 
+  index,
+  icon,
+  title,
+  description,
+  ctaText,
+  ctaIcon,
+  children,
+  onExpandChange, // Callback to notify parent when expand state changes
+  className = '',
+  style = {} 
+}) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleCtaClick = () => {
+    const newState = !isExpanded;
+    setIsExpanded(newState);
+    onExpandChange?.(newState); // Notify parent
+  };
+
+  // Wrap children with Framer Motion for scroll-triggered animations
+  const animatedChildren = Children.map(children, (child, index) => {
+    if (child && child.type === 'img') {
+      return (
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ 
+            once: false,
+            amount: 0.2,
+            root: null
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeOut"
+          }}
+          style={{ display: 'flex', flexShrink: 0 }}
+        >
+          {child}
+        </motion.div>
+      );
+    }
+    return child;
+  });
+
+  return (
+    <div className={`card ${isExpanded ? 'expanded' : ''} ${className}`}>
+      <span className="card-index" style={textStyles.index}>{index}</span>
+      <div className="card-indent">
+        <motion.div 
+          layout 
+          className={`card-frame ${isExpanded ? 'expanded' : ''}`}
+          transition={{ layout: { duration: 0.4, ease: "easeInOut" } }}
+        >
+          <motion.div 
+            layout 
+            className="card-head"
+            transition={{ 
+              layout: { duration: 0.4, ease: "easeInOut" }
+            }}
+          >
+            <motion.div 
+              layout="position"
+              className="card-content"
+              transition={{ 
+                layout: { duration: 0.4, ease: "easeInOut" }
+              }}
+            >
+              <div className="card-icon-wrapper">
+                {icon || <Icon 
+                  svgPath={ICON_PATHS.arrowRight} 
+                  size="xl" 
+                  className="card-icon"
+                />}
+              </div>
+              <h3 style={textStyles.heading}>{title}</h3>
+              <p 
+                style={textStyles.body}
+                dangerouslySetInnerHTML={{ __html: description }}
+              />
+            </motion.div>
+            <motion.div 
+              layout="position"
+              className="card-cta" 
+              onClick={handleCtaClick}
+              transition={{ 
+                layout: { duration: 0.4, ease: "easeInOut" }
+              }}
+            >
+              <span className="cta-text" style={textStyles.index}>{ctaText}</span>
+              <div className="cta-icon-wrapper">
+                <Icon 
+                  svgPath={ICON_PATHS.arrowRight} 
+                  size="small" 
+                  className="cta-icon"
+                />
+              </div>
+            </motion.div>
+          </motion.div>
+          <motion.div 
+            layout 
+            className="card-body"
+            transition={{ 
+              layout: { duration: 0.4, ease: "easeInOut" }
+            }}
+          >
+            <div className="body-scroll">
+              {animatedChildren}
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default Card; 

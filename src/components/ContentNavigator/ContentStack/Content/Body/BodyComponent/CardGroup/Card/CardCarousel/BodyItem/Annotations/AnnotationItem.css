@@ -1,0 +1,58 @@
+.annotation-item {
+  width: 260px;                 /* Fixed width for all items */
+  min-width: 260px;
+  height: fit-content;          /* Height adapts to content */
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  flex-shrink: 0;               /* Prevent items from shrinking */
+}
+
+.annotation-index {
+  font-family: var(--font-family-subtitle);
+  font-size: var(--font-size-annotation-subtitle, 8px);
+  font-weight: var(--font-weight-regular, 400);
+  color: var(--color-tertiary, #999988);
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.annotation-content {
+  display: flex;
+  gap: 0;
+  margin-left: 0;
+  width: 100%;
+}
+
+.annotation-frame {
+  margin-left: var(--spacing-sm, 8px);
+  border: 1px solid var(--color-primary, #ffffe3);
+  padding: var(--spacing-md, 12px);
+  background: var(--color-base, #0e0e10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs, 4px);
+  flex: 1;
+}
+
+.annotation-title {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-annotation-title, 14px);
+  font-weight: var(--font-weight-bold, 700);
+  color: var(--color-primary, #ffffe3);
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.annotation-description {
+  font-family: var(--font-family-subtitle);
+  font-size: var(--font-size-annotation-subtitle, 10px);
+  font-weight: var(--font-weight-regular, 400);
+  color: var(--color-secondary, #ccccb6);
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}

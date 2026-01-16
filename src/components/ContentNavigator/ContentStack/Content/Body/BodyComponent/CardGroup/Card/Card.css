@@ -1,0 +1,227 @@
+.card {
+  width: fit-content;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-index {
+  display: block;
+  margin-bottom: var(--spacing-sm, 8px);
+  width: fit-content;
+}
+
+.card-indent {
+  padding-left: var(--spacing-md, 12px);
+  width: fit-content;
+}
+
+.card-frame {
+  display: flex;
+  gap: 0;
+  width: var(--card-width-default, 540px);
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--color-inactive, #30302a);
+  overflow: hidden;
+}
+
+.card-frame:hover {
+  border-color: var(--color-primary, #ffffe3);
+}
+
+.card-frame.expanded {
+  width: var(--card-width-expanded, 1136px);
+}
+
+.card-frame.expanded .card-body {
+  width: 100%;
+}
+
+.card-frame.expanded .card-head {
+  width: var(--card-head-expanded, 352px);
+  min-width: var(--card-head-expanded, 352px);
+  border-right: 1px solid var(--color-inactive, #30302a);
+}
+
+/* Card head hover - applies when hovering over the card frame */
+.card-frame:hover .card-head {
+  border-right-color: var(--color-primary, #ffffe3);
+}
+
+/* Card frame hover cascading to CTA */
+.card-frame:hover .card-cta {
+  background-color: var(--color-hover, #1e1e1e);
+  border-top-color: var(--color-primary, #ffffe3);
+}
+
+.card-frame:hover .card-cta span {
+  color: var(--color-primary, #ffffe3) !important;
+}
+
+.card-frame:hover .card-cta .cta-icon {
+  color: var(--color-primary, #ffffe3);
+}
+
+.card-frame:hover .card-cta .cta-icon svg {
+  fill: var(--color-primary, #ffffe3);
+}
+
+.card-frame.expanded .body-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.card-head {
+  min-width: var(--card-width-default, 540px);
+  width: var(--card-width-default, 540px);
+  height: var(--card-height-default, 540px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.card-body {
+  width: 0;
+  height: var(--card-height-default, 540px);
+  overflow: hidden;
+  background: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.card-content {
+  padding: var(--spacing-xl, 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.card-icon-wrapper {
+  width: var(--icon-size-default, 72px);
+  height: var(--icon-size-default, 72px);
+  padding-bottom: var(--spacing-xl, 24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon {
+  width: 100%;
+  height: 100%;
+  color: var(--color-primary, #ffffe3);
+  transition: var(--transition-fast, all 0.3s ease);
+  display: block;
+  flex-shrink: 0;
+  animation: cardIconPulse 3s ease-in-out infinite;
+}
+
+.card-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.card-frame:hover .card-icon {
+  color: var(--color-primary, #ffffe3);
+}
+
+.card-frame:hover .card-icon svg {
+  fill: var(--color-primary, #ffffe3);
+}
+
+.card-content h3 {
+  padding-bottom: var(--spacing-md, 12px);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.card-cta {
+  width: 100%;
+  height: var(--button-height, 64px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 var(--spacing-xl, 24px);
+  border-top: 1px solid var(--color-inactive, #30302a);
+  transition: var(--transition-fast, all 0.3s ease);
+}
+
+.cta-icon-wrapper {
+  width: var(--icon-size-small, 24px);
+  height: var(--icon-size-small, 24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-icon {
+  width: 100%;
+  height: 100%;
+  color: var(--color-tertiary, #999988);
+  transition: var(--transition-fast, all 0.3s ease);
+  display: block;
+  flex-shrink: 0;
+}
+
+.cta-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.body-scroll {
+  height: 100%;
+  min-width: 100%;
+  display: flex;
+  gap: 4px;
+  padding: 0;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.body-scroll img {
+  height: var(--card-height-default, 540px);
+  width: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.card-content p {
+  margin: 0;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.card-content p ul {
+  margin: var(--spacing-lg, 16px) 0 0 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.card-content p li {
+  margin-bottom: var(--spacing-sm, 8px);
+  line-height: 1.4;
+}
+
+.card-content p li:last-child {
+  margin-bottom: 0;
+} 
+
+/* Carousel mode styling */
+.body-scroll.carousel-mode {
+  display: block;
+  gap: 0;
+  padding: 0;
+}

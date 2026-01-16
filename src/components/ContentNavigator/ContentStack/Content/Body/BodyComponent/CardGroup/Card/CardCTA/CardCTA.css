@@ -1,0 +1,70 @@
+.card-cta {
+  width: 100%;
+  height: var(--button-height, 64px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--spacing-xl, 24px);
+  border-top: 1px solid var(--color-inactive, #30302a);
+  transition: var(--transition-fast, all 0.3s ease);
+  position: relative;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.cta-icon-wrapper {
+  width: var(--icon-size-small, 24px);
+  height: var(--icon-size-small, 24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-icon-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-icon {
+  width: 100%;
+  height: 100%;
+  color: var(--color-tertiary, #999988);
+  transition: var(--transition-fast, all 0.3s ease);
+  display: block;
+  flex-shrink: 0;
+}
+
+.cta-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* FullCard variant styles */
+.full-card-cta {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 24px;
+  border-top: 1px solid var(--color-inactive);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.full-card-cta:hover span {
+  color: var(--color-active) !important;
+}
+
+.full-card-cta-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-tertiary);
+  transition: all 0.3s ease;
+}

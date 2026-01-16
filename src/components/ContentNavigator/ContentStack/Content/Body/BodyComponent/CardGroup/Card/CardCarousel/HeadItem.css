@@ -1,0 +1,121 @@
+.head-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 16px 0 16px;
+  background: var(--color-base, #0e0e10);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, background-color 0.2s ease, position 0.3s ease, margin 0.3s ease;
+}
+
+.head-item.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* When menu is open, all items become visible and stack vertically */
+.card-carousel-head-stack.menu-open .head-item {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  height: 86px;
+  opacity: 1;
+  pointer-events: auto;
+  margin-bottom: 1px; /* Small gap between items */
+  transition: opacity 0.2s ease 0.1s, background-color 0.2s ease, position 0s; /* Delay opacity for smoother animation */
+}
+
+/* Ensure active item still stands out when menu is open */
+.card-carousel-head-stack.menu-open .head-item.active {
+  background: var(--color-hover, #1e1e1e);
+}
+
+/* Inactive items in menu should be different from active */
+.card-carousel-head-stack.menu-open .head-item:not(.active) {
+  background: var(--color-base, #0e0e10);
+  opacity: 0.8;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hover states for inactive head items in menu */
+.card-carousel-head-stack.menu-open .head-item:not(.active):hover {
+  background: var(--color-hover, #1e1e1e);
+  opacity: 1;
+}
+
+
+
+.head-item-top {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.head-item-index {
+  font-family: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  color: var(--color-tertiary, #999988);
+  margin: 0;
+  padding: 0;
+}
+
+
+.head-item-progress-bar {
+  width: 100%;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.head-item-progress-fill {
+  height: 2px;
+  background-color: var(--color-primary, #ffffe3);
+  width: 0%;
+}
+
+.head-item-title {
+  font-family: 'Satoshi', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--color-primary, #ffffe3);
+  margin: 0;
+  padding-left: 12px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.head-item-title.animate {
+  animation: titleSlideIn 0.4s ease-out;
+}
+
+@keyframes titleSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Individual head item hover removed - now handled at head-stack level */
+
+

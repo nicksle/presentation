@@ -1,0 +1,92 @@
+/* SectionNav Component Styles */
+
+/* Main container - centered, fills width, vertical stack with 0 gap */
+.section-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  align-items: center;
+}
+
+/* Title container */
+.section-nav-title {
+  width: 100%;
+  padding: 24px 16px;
+  border: 1px solid var(--color-inactive);
+}
+
+.section-nav-title .H2 {
+  /* H2 global style already applied via className */
+  display: block;
+  width: 100%;
+}
+
+/* List container - vertical stack with 0 gap */
+.section-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+/* List item */
+.section-nav-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--color-inactive);
+  cursor: pointer;
+  transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+
+.section-nav-list-item:hover {
+  opacity: 0.7;
+}
+
+.section-nav-list-item.active {
+  background-color: var(--color-hover);
+  border-color: var(--color-primary);
+}
+
+.section-nav-list-item.active .section-nav-item-text .B2 {
+  font-weight: 700; /* Bold */
+}
+
+.section-nav-list-item.active .section-nav-item-index {
+  color: var(--color-primary);
+}
+
+.section-nav-list-item.active .section-nav-item-header svg {
+  color: var(--color-primary);
+}
+
+/* Index and Icon container - space between */
+.section-nav-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.section-nav-item-header svg {
+  color: var(--color-tertiary);
+}
+
+.section-nav-item-index {
+  /* B2 global style already applied via className */
+  color: var(--color-tertiary);
+}
+
+/* Text with 12px left margin */
+.section-nav-item-text {
+  margin-left: 12px;
+  width: 100%;
+}
+
+.section-nav-item-text .B2 {
+  /* B2 global style already applied via className */
+  display: block;
+}

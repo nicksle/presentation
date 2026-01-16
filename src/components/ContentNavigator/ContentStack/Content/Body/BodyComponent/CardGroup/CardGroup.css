@@ -1,0 +1,33 @@
+.card-group {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* When first card is expanded */
+.card-group .card:first-child.expanded {
+  transform: translateX(0);
+}
+
+/* When last card is expanded */
+.card-group .card:last-child.expanded {
+  transform: translateX(-50%);
+}
+
+/* When first card is expanded, move last card right */
+.card-group .card:first-child.expanded ~ .card.unexpanded {
+  transform: translateX(100%);
+  pointer-events: none;
+}
+
+/* When last card is expanded, move first card left */
+.card-group .card:first-child.unexpanded {
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.card-group-item {
+  flex-shrink: 0;
+}

@@ -1,0 +1,28 @@
+.text-set {
+  display: flex;
+  flex-direction: column;
+  gap: var(--text-gap, 12px);
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-shrink: 0;
+  height: 100%;
+  padding-left: 12px;
+}
+
+/* Ensure text content has proper styling */
+.text-set > * {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Context text styling - Body Small (B2) */
+.text-set-context {
+  font-family: 'Satoshi', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--secondary);
+  margin: 0;
+  padding-bottom: 8px;
+}

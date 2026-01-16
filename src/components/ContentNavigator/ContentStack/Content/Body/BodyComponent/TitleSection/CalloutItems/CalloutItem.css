@@ -1,0 +1,37 @@
+.callout-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.callout-item-index {
+  font-family: var(--font-family-subtitle);
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-tertiary);
+  transition: color 0.3s ease;
+}
+
+.callout-item-frame {
+  padding: 16px;
+  border: 1px solid var(--color-inactive);
+  background: var(--color-base);
+  margin-left: 12px;
+  transition: border-color 0.3s ease;
+}
+
+.callout-item-content {
+  font-family: var(--font-family-subtitle);
+  font-size: var(--font-size-subtitle);
+  color: var(--color-secondary);
+}
+
+/* Hover states */
+.callout-item:hover .callout-item-index {
+  color: var(--color-primary);
+}
+
+.callout-item:hover .callout-item-frame {
+  border-color: var(--color-primary);
+}

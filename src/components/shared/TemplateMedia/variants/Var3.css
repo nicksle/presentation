@@ -1,0 +1,42 @@
+/* Var3 - Three phones with size hierarchy */
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.phone-wrapper.small {
+  padding: 24px 0;
+}
+
+.phone-wrapper.large {
+  padding: 16px 0;
+}
+
+.media {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  /* Phone frame styling from phone.css */
+}
+
+.phone-wrapper.small .media {
+  max-height: 252px; /* 300px - 48px padding */
+}
+
+.phone-wrapper.large .media {
+  max-height: 268px; /* 300px - 32px padding */
+}

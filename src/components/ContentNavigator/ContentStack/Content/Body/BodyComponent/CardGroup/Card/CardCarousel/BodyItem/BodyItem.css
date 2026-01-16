@@ -1,0 +1,24 @@
+.body-item {
+  height: 100%;
+  min-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: stretch;
+  background: var(--color-body, #1D1D21);
+}
+
+.body-item-content {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  gap: 24px;
+  padding: 16px;
+  align-items: flex-start;
+}
+
+.body-item-annotations {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

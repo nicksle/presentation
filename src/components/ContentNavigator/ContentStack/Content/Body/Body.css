@@ -1,0 +1,26 @@
+.body {
+  box-sizing: border-box;
+  position: relative;
+  /* Layout controlled by PresentationLayout.css */
+}
+
+/* Progress bar container - positioned on far right */
+.body-progress-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--color-inactive);
+  z-index: 10;
+}
+
+/* Progress fill - animates from top to bottom */
+.body-progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-primary);
+  transition: height 0.3s ease;
+}

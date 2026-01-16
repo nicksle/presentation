@@ -1,0 +1,61 @@
+/* LayeredLogo component styles */
+
+.layered-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 88 / 56; /* Maintain aspect ratio for percentage-based widths */
+}
+
+/* All layers are absolutely positioned */
+.logo-layer {
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Layer 1: Base - uses --color-base */
+.layer-base {
+  top: 0;
+  left: 0;
+  color: var(--color-base);
+}
+
+/* Layer 2: Outline - uses --color-primary, centered with 4px offset */
+.layer-outline {
+  top: 7.14%;      /* 4px / 56px */
+  left: 4.55%;     /* 4px / 88px */
+  color: var(--color-primary);
+}
+
+/* Layer 3: Face 1 (Right) - positioned at 44px from left (50%), 12px from top */
+.layer-face-1 {
+  top: 21.43%;     /* 12px / 56px */
+  left: 50%;       /* 44px / 88px */
+}
+
+/* Face 1 background - uses --color-base (white) */
+.layer-face-1 .face-1-bg {
+  color: var(--color-base);
+}
+
+/* Face 1 features (eyes, mouth) - uses --color-primary (black) */
+.layer-face-1 .face-1-features {
+  color: var(--color-primary);
+}
+
+/* Layer 4: Face 2 (Left) - positioned at 12px from left, 12px from top */
+.layer-face-2 {
+  top: 21.43%;     /* 12px / 56px */
+  left: 13.64%;    /* 12px / 88px */
+  transition: transform 0.3s ease;
+}
+
+/* Face 2 background - uses --color-primary (black) */
+.layer-face-2 .face-2-bg {
+  color: var(--color-primary);
+}
+
+/* Face 2 features (eyes, mouth) - uses --color-base (white) */
+.layer-face-2 .face-2-features {
+  color: var(--color-base);
+}

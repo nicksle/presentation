@@ -1,0 +1,104 @@
+:root {
+  /* Background Fill Colors */
+  --color-bg-primary: #0e0e10;
+  --color-bg-secondary: #1e1e1e;
+  --color-bg-tertiary: #30302a;
+
+  /* Border Fill Colors */
+  --color-border-primary: #30302a;
+  --color-border-secondary: #999988;
+
+  /* Text Fill Colors */
+  --color-text-primary: #ffffe3;
+  --color-text-secondary: #ccccb6;
+  --color-text-tertiary: #999988;
+
+  /* Legacy Color Tokens (for backward compatibility) */
+  --color-primary: #ffffe3; /* Maps to text-primary - pale yellow/cream */
+  --color-secondary: #ccccb6; /* Maps to text-secondary - beige/tan */
+  --color-tertiary: #999988; /* Maps to text-tertiary - muted gray */
+  --color-base: #0e0e10; /* Maps to bg-primary - very dark background */
+  --color-body: #1e1e1e; /* Maps to bg-secondary - dark gray */
+  --color-hover: #1e1e1e; /* Maps to bg-secondary - dark gray */
+  --color-inactive: #30302a; /* Maps to border-primary - dark gray-brown */
+  --color-active: #ffffe3; /* Maps to text-primary - pale yellow/cream */
+
+  /* Spacing Tokens */
+  --spacing-none: 0px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+  --spacing-xxxl: 64px;
+
+  /* Sizing Tokens */
+  --card-width-default: 540px;
+  --card-height-default: 540px;
+  --card-width-expanded: 1136px;
+  --card-head-expanded: 352px;
+  --card-body-expanded: 784px;
+  --icon-size-default: 72px;
+  --icon-size-small: 24px;
+  --button-height: 64px;
+  --header-height: 64px;
+  --header-max-width: 1200px;
+  --nav-link-width: 124px;
+  --head-row-height: 16px;
+  --head-title-height: 48px;
+  --icon-height-small: 16px;
+  --content-height-inactive: 154px;
+  --content-height-active-min: 500px;
+  --content-height-active-max: 800px;
+  --head-animation-distance: 20px;
+  --body-animation-distance: 20px;
+  --border-radius-default: 8px;
+  --border-radius-large: 16px;
+
+  /* Transition Tokens */
+  --transition-fast: all 0.3s ease;
+  --transition-medium: all 0.5s ease;
+  --transition-slow: all 0.8s ease;
+
+  /* Typography Tokens */
+  --font-family-title: "Satoshi", Helvetica, Arial, sans-serif;
+  --font-family-body: "Satoshi", Helvetica, Arial, sans-serif;
+  --font-family-subtitle: "SF Mono", Menlo, Monaco, Consolas, monospace;
+  
+  /* Typography - Font Sizes */
+  --font-size-title-xxl: 64px;
+  --font-size-title-xl: 48px;
+  --font-size-title-lg: 32px;
+  --font-size-title-base: 24px;
+  --font-size-title-sm: 20px;
+  --font-size-subtitle: 14px;
+  --font-size-body: 32px;
+  --font-size-body-sm: 20px;
+  --font-size-caption: 12px;
+  
+  /* Annotation Typography */
+  --font-size-annotation-title: 14px;
+  --font-size-annotation-subtitle: 10px;
+  
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Text Style Tokens */
+  --text-style-title: {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-title-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary);
+    line-height: 1.2;
+  };
+  
+  --text-style-subtitle: {
+    font-family: var(--font-family-subtitle);
+    font-size: var(--font-size-subtitle);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-tertiary);
+    line-height: 1.2;
+  };
+}
