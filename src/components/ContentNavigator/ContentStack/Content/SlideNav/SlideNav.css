@@ -1,0 +1,30 @@
+.slide-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 48px;
+  height: 100%;
+  flex-shrink: 0;
+  background-color: var(--color-base);
+  border-left: 1px solid var(--color-inactive);
+}
+
+.slide-nav-button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--color-primary);
+  transition: opacity 0.2s ease;
+}
+
+.slide-nav-button:hover {
+  opacity: 0.7;
+}

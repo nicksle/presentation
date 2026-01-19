@@ -1,19 +1,14 @@
 import React from 'react';
-import './CarouselItem.css';
 
 /**
  * CarouselItem Component
  *
- * Container for media content (images/videos) within SlideCarousel
- * Provides consistent styling and sizing for carousel items
+ * Wrapper for content within SlideCarousel
+ * Returns children directly - styling handled by Carousel's .carousel-item
  */
 
-const CarouselItem = ({ children, className = '' }) => {
-  return (
-    <div className={`carousel-item-container ${className}`}>
-      {children}
-    </div>
-  );
+const CarouselItem = ({ children }) => {
+  return <>{children}</>;
 };
 
 export default CarouselItem;

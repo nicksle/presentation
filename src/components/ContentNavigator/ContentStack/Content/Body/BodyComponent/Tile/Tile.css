@@ -62,19 +62,6 @@
   color: var(--color-tertiary);
 }
 
-.tile-divider {
-  width: calc(100% - var(--spacing-xxl));
-  height: 1px;
-  background-color: var(--color-inactive);
-  margin: 0 var(--spacing-md);
-  transition: var(--transition-fast);
-}
-
-.tile-body {
-  width: 100%;
-  height: fit-content;
-  padding: var(--spacing-lg);
-}
 
 .tile-icon-placeholder {
   width: var(--spacing-sm);

@@ -2,6 +2,70 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   overflow: hidden;
+  background-color: var(--color-hover);
+  padding: 32px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Content area - holds the current slide */
+.slide-carousel-content {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Individual slide wrapper */
+.slide-carousel-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+/* Images and videos inside content */
+.slide-carousel-content img,
+.slide-carousel-content video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 24px;
+}
+
+/* Navigation buttons */
+.slide-carousel-nav {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 0;
+  flex-shrink: 0;
+  color: var(--color-primary);
+  transition: opacity 0.2s ease;
+}
+
+.slide-carousel-nav:hover {
+  opacity: 0.7;
+}
+
+.slide-carousel-nav-left {
+  margin-right: 16px;
+}
+
+.slide-carousel-nav-right {
+  margin-left: 16px;
 }

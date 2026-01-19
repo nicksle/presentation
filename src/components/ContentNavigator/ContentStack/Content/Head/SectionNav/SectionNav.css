@@ -12,7 +12,7 @@
 /* Title container */
 .section-nav-title {
   width: 100%;
-  padding: 24px 16px;
+  padding: 24px;
   border: 1px solid var(--color-inactive);
 }
 
@@ -80,9 +80,10 @@
   color: var(--color-tertiary);
 }
 
-/* Text with 12px left margin */
+/* Text with 12px left and right margin */
 .section-nav-item-text {
   margin-left: 12px;
+  margin-right: 12px;
   width: 100%;
 }
 

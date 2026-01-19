@@ -11,8 +11,11 @@ import BodyComponent from '../../ContentNavigator/ContentStack/Content/Body/Body
 import Text from '../../ContentNavigator/ContentStack/Content/Body/BodyComponent/Text/Text';
 import Image from '../../ContentNavigator/ContentStack/Content/Body/BodyComponent/Image/Image';
 import Tile from '../../ContentNavigator/ContentStack/Content/Body/BodyComponent/Tile/Tile';
+import TileRow from '../../ContentNavigator/ContentStack/Content/Body/BodyComponent/TileRow/TileRow';
+import TileColumn from '../../ContentNavigator/ContentStack/Content/Body/BodyComponent/TileColumn/TileColumn';
 import Carousel from '../../Carousel/Carousel';
 import SlideCarousel from '../../ContentNavigator/ContentStack/Content/Body/SlideCarousel/SlideCarousel';
+import SlideNav from '../../ContentNavigator/ContentStack/Content/SlideNav/SlideNav';
 import CarouselItem from '../../ContentNavigator/ContentStack/Content/Body/SlideCarousel/CarouselItem/CarouselItem';
 import TemplateMedia from '../../shared/TemplateMedia/TemplateMedia';
 import Impact from '../../shared/Impact';
@@ -170,6 +173,36 @@ const PresentationContent = () => {
     setScrollDelta(0); // Reset scroll delta when changing subsections
   };
 
+  // Handle slide navigation via arrow buttons (within current subsection only)
+  const handleSlidePrev = () => {
+    if (activeSlideIndex > 0) {
+      setActiveSlideIndex(activeSlideIndex - 1);
+      setSlideDirection('backward');
+      setScrollDelta(0);
+    }
+  };
+
+  const handleSlideNext = () => {
+    const activeSubsection = contentRegistry[activeContentId]?.subsections?.find(
+      sub => sub.id === activeSubsectionId
+    );
+    const totalSlides = activeSubsection?.slides?.length || 0;
+
+    if (activeSlideIndex < totalSlides - 1) {
+      setActiveSlideIndex(activeSlideIndex + 1);
+      setSlideDirection('forward');
+      setScrollDelta(0);
+    }
+  };
+
+  // Get total slides for current subsection
+  const getTotalSlides = () => {
+    const activeSubsection = contentRegistry[activeContentId]?.subsections?.find(
+      sub => sub.id === activeSubsectionId
+    );
+    return activeSubsection?.slides?.length || 0;
+  };
+
   // Handle slide navigation via scroll
   const handleSlideNavigation = (e) => {
     e.preventDefault();
@@ -282,25 +315,24 @@ const PresentationContent = () => {
               index: '01',
               title: 'What is TANDA?',
               content: (
-                <BodyComponent key="what-is-tanda-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="What is TANDA?" style="B1">
-                    TANDA information goes here.
-                  </Text>
-                </BodyComponent>
+                <>
+                  <BodyComponent key="what-is-tanda-1" style={{ gridTemplateColumns: '1fr' }}>
+                    <Text style="B1">
+                      TANDA is a fintech startup dedicated to making financial security accessible to everyone.
+                    </Text>
+                  </BodyComponent>
+                  <SlideCarousel height="100%" gap={16}>
+                    <CarouselItem>
+                      <img src={SharedImage01} alt="TANDA slide 1" />
+                      <img src={SharedImage02} alt="TANDA slide 1b" />
+                    </CarouselItem>
+                    <CarouselItem>
+                      <img src={SharedImage02} alt="TANDA slide 2" />
+                    </CarouselItem>
+                  </SlideCarousel>
+                </>
               )
             },
-            {
-              id: 'what-is-tanda-2',
-              index: '02',
-              title: 'TANDA Details',
-              content: (
-                <BodyComponent key="what-is-tanda-2" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="What is TANDA? - Slide 2" style="B1">
-                    More details about TANDA.
-                  </Text>
-                </BodyComponent>
-              )
-            }
           ]
         },
         {
@@ -364,16 +396,47 @@ const PresentationContent = () => {
         {
           id: 'problem',
           index: '01',
-          text: 'Problem Statement',
+          text: 'Using Analytics to Identify the Problem',
           slides: [
             {
               id: 'problem-1',
               index: '01',
-              title: 'Core Problem Statement',
+              title: 'Using Analytics to Identify the Problem',
               content: (
-                <BodyComponent key="problem-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Problem Statement" style="B1">
-                    Defining the core problem we're solving.
+                <>
+                  <SlideCarousel>
+                    <CarouselItem>
+                      <img src={SharedImage01} alt="Analytics slide 1" />
+                    </CarouselItem>
+                    <CarouselItem>
+                      <img src={SharedImage02} alt="Analytics slide 2" />
+                    </CarouselItem>
+                  </SlideCarousel>
+                  <TileRow>
+                    <Tile
+                      index="01"
+                      title="Sign Up Rate"
+                    />
+                    <Tile
+                      index="02"
+                      title="Activation Rate"
+                    />
+                    <Tile
+                      index="03"
+                      title="Onboarding Time"
+                    />
+                  </TileRow>
+                </>
+              )
+            },
+            {
+              id: 'problem-2',
+              index: '02',
+              title: 'Problem Statement',
+              content: (
+                <BodyComponent key="problem-2" style={{ gridTemplateColumns: '1fr', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', textAlign: 'center' }}>
+                  <Text style="B1">
+                    Users are rapidly falling off as they go through the steps of our sign up and onboarding funnels.
                   </Text>
                 </BodyComponent>
               )
@@ -390,11 +453,23 @@ const PresentationContent = () => {
               index: '01',
               title: 'Business Goals',
               content: (
-                <BodyComponent key="business-goals-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Business Goals" style="B1">
-                    Understanding the business objectives.
-                  </Text>
-                </BodyComponent>
+                <TileColumn>
+                  <Tile
+                    index="01"
+                    title="Goal 1"
+                    body="Description for goal 1"
+                  />
+                  <Tile
+                    index="02"
+                    title="Goal 2"
+                    body="Description for goal 2"
+                  />
+                  <Tile
+                    index="03"
+                    title="Goal 3"
+                    body="Description for goal 3"
+                  />
+                </TileColumn>
               )
             }
           ]
@@ -409,11 +484,23 @@ const PresentationContent = () => {
               index: '01',
               title: 'User Goals',
               content: (
-                <BodyComponent key="user-goals-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="User Goals" style="B1">
-                    Understanding the user objectives.
-                  </Text>
-                </BodyComponent>
+                <TileColumn>
+                  <Tile
+                    index="01"
+                    title="Goal 1"
+                    body="Description for goal 1"
+                  />
+                  <Tile
+                    index="02"
+                    title="Goal 2"
+                    body="Description for goal 2"
+                  />
+                  <Tile
+                    index="03"
+                    title="Goal 3"
+                    body="Description for goal 3"
+                  />
+                </TileColumn>
               )
             }
           ]
@@ -447,11 +534,23 @@ const PresentationContent = () => {
             {
               id: 'user-interviews-1',
               index: '01',
-              title: 'User Interviews',
+              title: 'User Interviews Overview',
               content: (
                 <BodyComponent key="user-interviews-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="User Interviews" style="B1">
-                    Insights from user interviews.
+                  <Text style="B1">
+                    User interviews overview content goes here.
+                  </Text>
+                </BodyComponent>
+              )
+            },
+            {
+              id: 'user-interviews-2',
+              index: '02',
+              title: 'Takeaways and Findings',
+              content: (
+                <BodyComponent key="user-interviews-2" style={{ gridTemplateColumns: '1fr' }}>
+                  <Text style="B1">
+                    Interview takeaways content goes here.
                   </Text>
                 </BodyComponent>
               )
@@ -466,11 +565,23 @@ const PresentationContent = () => {
             {
               id: 'ux-cam-session-1',
               index: '01',
-              title: 'UX Cam Session',
+              title: 'UX Cam Session Overview',
               content: (
                 <BodyComponent key="ux-cam-session-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="UX Cam Session" style="B1">
-                    Analysis from UX Cam sessions.
+                  <Text style="B1">
+                    UX Cam session overview content goes here.
+                  </Text>
+                </BodyComponent>
+              )
+            },
+            {
+              id: 'ux-cam-session-2',
+              index: '02',
+              title: 'Takeaways and Findings',
+              content: (
+                <BodyComponent key="ux-cam-session-2" style={{ gridTemplateColumns: '1fr' }}>
+                  <Text style="B1">
+                    Takeaways and findings content goes here.
                   </Text>
                 </BodyComponent>
               )
@@ -487,11 +598,17 @@ const PresentationContent = () => {
               index: '01',
               title: 'Creating Personas',
               content: (
-                <BodyComponent key="creating-personas-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Creating Personas" style="B1">
-                    Building user personas from research.
-                  </Text>
-                </BodyComponent>
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Persona 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Persona 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Persona 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             }
           ]
@@ -504,11 +621,35 @@ const PresentationContent = () => {
             {
               id: 'user-flow-audit-1',
               index: '01',
-              title: 'User Flow Audit',
+              title: 'Overview',
               content: (
                 <BodyComponent key="user-flow-audit-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="User Flow Audit" style="B1">
-                    Auditing existing user flows.
+                  <Text style="B1">
+                    Overview content goes here.
+                  </Text>
+                </BodyComponent>
+              )
+            },
+            {
+              id: 'user-flow-audit-2',
+              index: '02',
+              title: 'User Flow Walkthrough',
+              content: (
+                <BodyComponent key="user-flow-audit-2" style={{ gridTemplateColumns: '1fr' }}>
+                  <Text style="B1">
+                    User flow walkthrough content goes here.
+                  </Text>
+                </BodyComponent>
+              )
+            },
+            {
+              id: 'user-flow-audit-3',
+              index: '03',
+              title: 'Takeaways',
+              content: (
+                <BodyComponent key="user-flow-audit-3" style={{ gridTemplateColumns: '1fr' }}>
+                  <Text style="B1">
+                    Takeaways content goes here.
                   </Text>
                 </BodyComponent>
               )
@@ -544,11 +685,23 @@ const PresentationContent = () => {
             {
               id: 'technical-friction-1',
               index: '01',
-              title: 'Technical Friction Caused Early Exits',
+              title: 'Unclear Email Sign Up',
               content: (
                 <BodyComponent key="technical-friction-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Technical Friction" style="B1">
-                    How technical issues led to early user exits.
+                  <Text style="B1">
+                    Unclear email sign up content goes here.
+                  </Text>
+                </BodyComponent>
+              )
+            },
+            {
+              id: 'technical-friction-2',
+              index: '02',
+              title: 'Bugs that Prevented Successful Sign Ups',
+              content: (
+                <BodyComponent key="technical-friction-2" style={{ gridTemplateColumns: '1fr' }}>
+                  <Text style="B1">
+                    Bugs that prevented successful sign ups content goes here.
                   </Text>
                 </BodyComponent>
               )
@@ -563,11 +716,23 @@ const PresentationContent = () => {
             {
               id: 'trust-barriers-1',
               index: '01',
-              title: 'Trust Barriers & Unclear Value Prevent Activation',
+              title: 'KYC Trust Issues',
               content: (
                 <BodyComponent key="trust-barriers-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Trust Barriers" style="B1">
-                    How trust issues and unclear value prevented user activation.
+                  <Text style="B1">
+                    KYC trust issues content goes here.
+                  </Text>
+                </BodyComponent>
+              )
+            },
+            {
+              id: 'trust-barriers-2',
+              index: '02',
+              title: 'Value Proposition Gaps',
+              content: (
+                <BodyComponent key="trust-barriers-2" style={{ gridTemplateColumns: '1fr' }}>
+                  <Text style="B1">
+                    Value proposition gaps content goes here.
                   </Text>
                 </BodyComponent>
               )
@@ -582,11 +747,23 @@ const PresentationContent = () => {
             {
               id: 'lack-of-guidance-1',
               index: '01',
-              title: 'New Users Lacked Guidance and Navigation',
+              title: 'Onboarding Carousel Lacked Appeal',
               content: (
                 <BodyComponent key="lack-of-guidance-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Lack of Guidance" style="B1">
-                    How new users struggled without proper guidance.
+                  <Text style="B1">
+                    Onboarding carousel lacked appeal content goes here.
+                  </Text>
+                </BodyComponent>
+              )
+            },
+            {
+              id: 'lack-of-guidance-2',
+              index: '02',
+              title: 'Unclear Navigation and Direction',
+              content: (
+                <BodyComponent key="lack-of-guidance-2" style={{ gridTemplateColumns: '1fr' }}>
+                  <Text style="B1">
+                    Unclear navigation and direction content goes here.
                   </Text>
                 </BodyComponent>
               )
@@ -622,11 +799,23 @@ const PresentationContent = () => {
             {
               id: 'value-props-trust-1',
               index: '01',
-              title: 'Exploring Value Props and Trust Signals',
+              title: 'Value Proposition Brainstorm',
               content: (
                 <BodyComponent key="value-props-trust-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Value Props and Trust Signals" style="B1">
-                    Building trust and communicating value.
+                  <Text style="B1">
+                    Value proposition brainstorm content goes here.
+                  </Text>
+                </BodyComponent>
+              )
+            },
+            {
+              id: 'value-props-trust-2',
+              index: '02',
+              title: 'Trust Signals Brainstorm',
+              content: (
+                <BodyComponent key="value-props-trust-2" style={{ gridTemplateColumns: '1fr' }}>
+                  <Text style="B1">
+                    Trust signals brainstorm content goes here.
                   </Text>
                 </BodyComponent>
               )
@@ -641,13 +830,37 @@ const PresentationContent = () => {
             {
               id: 'education-guidance-1',
               index: '01',
-              title: 'Integrating Education and Guidance',
+              title: 'Identify Points of Need',
               content: (
-                <BodyComponent key="education-guidance-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Education and Guidance" style="B1">
-                    Helping users understand and navigate the product.
-                  </Text>
-                </BodyComponent>
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Points of need 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Points of need 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Points of need 3" />
+                  </CarouselItem>
+                </SlideCarousel>
+              )
+            },
+            {
+              id: 'education-guidance-2',
+              index: '02',
+              title: 'Exploring Education Options',
+              content: (
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Education options 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Education options 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Education options 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             }
           ]
@@ -660,13 +873,55 @@ const PresentationContent = () => {
             {
               id: 'sign-up-flow-1',
               index: '01',
-              title: 'Streamlining the Sign Up Flow',
+              title: 'Sign Up Options',
               content: (
-                <BodyComponent key="sign-up-flow-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Sign Up Flow" style="B1">
-                    Simplifying the registration process.
-                  </Text>
-                </BodyComponent>
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Sign up options 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Sign up options 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Sign up options 3" />
+                  </CarouselItem>
+                </SlideCarousel>
+              )
+            },
+            {
+              id: 'sign-up-flow-2',
+              index: '02',
+              title: 'Sign Up Flow Rearrangement',
+              content: (
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Sign up flow 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Sign up flow 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Sign up flow 3" />
+                  </CarouselItem>
+                </SlideCarousel>
+              )
+            },
+            {
+              id: 'sign-up-flow-3',
+              index: '03',
+              title: 'Add User Segmentation Survey',
+              content: (
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Segmentation survey 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Segmentation survey 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Segmentation survey 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             }
           ]
@@ -719,13 +974,85 @@ const PresentationContent = () => {
             {
               id: 'sign-up-context-1',
               index: '01',
-              title: 'Efficient Sign Up that Provides Context and Motivation',
+              title: 'Overview',
               content: (
                 <BodyComponent key="sign-up-context-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Sign Up Context and Motivation" style="B1">
-                    Creating an efficient sign up experience with clear context.
+                  <Text style="B1">
+                    Overview content goes here.
                   </Text>
                 </BodyComponent>
+              )
+            },
+            {
+              id: 'sign-up-context-2',
+              index: '02',
+              title: 'Sign Up Screen Carousel',
+              content: (
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Sign up screen 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Sign up screen 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Sign up screen 3" />
+                  </CarouselItem>
+                </SlideCarousel>
+              )
+            },
+            {
+              id: 'sign-up-context-3',
+              index: '03',
+              title: 'Sign Up Options',
+              content: (
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Sign up options 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Sign up options 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Sign up options 3" />
+                  </CarouselItem>
+                </SlideCarousel>
+              )
+            },
+            {
+              id: 'sign-up-context-4',
+              index: '04',
+              title: 'Simplified Email Sign Up',
+              content: (
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Email sign up 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Email sign up 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Email sign up 3" />
+                  </CarouselItem>
+                </SlideCarousel>
+              )
+            },
+            {
+              id: 'sign-up-context-5',
+              index: '05',
+              title: 'Segmentation Survey',
+              content: (
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Segmentation survey 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Segmentation survey 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Segmentation survey 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             }
           ]
@@ -738,13 +1065,49 @@ const PresentationContent = () => {
             {
               id: 'trust-barriers-solution-1',
               index: '01',
-              title: 'Trust Barriers and Unclear Value Prevented Activation',
+              title: 'Overview',
               content: (
                 <BodyComponent key="trust-barriers-solution-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Trust Barriers Solution" style="B1">
-                    Addressing trust barriers and clarifying value proposition.
+                  <Text style="B1">
+                    Overview content goes here.
                   </Text>
                 </BodyComponent>
+              )
+            },
+            {
+              id: 'trust-barriers-solution-2',
+              index: '02',
+              title: 'Integrate Education In-App',
+              content: (
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Education in-app 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Education in-app 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Education in-app 3" />
+                  </CarouselItem>
+                </SlideCarousel>
+              )
+            },
+            {
+              id: 'trust-barriers-solution-3',
+              index: '03',
+              title: 'Reworked Onboarding',
+              content: (
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Reworked onboarding 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Reworked onboarding 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Reworked onboarding 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             }
           ]
@@ -1079,7 +1442,7 @@ const PresentationContent = () => {
                 </motion.div>
               </AnimatePresence>
 
-              {/* Body - right content area (70%) */}
+              {/* Body - right content area */}
               <Body
                 ref={bodyRef}
                 key={activeContentId}
@@ -1088,11 +1451,15 @@ const PresentationContent = () => {
                 activeSlideIndex={activeSlideIndex}
                 slideDirection={slideDirection}
                 onScroll={handleContentScroll}
-                totalSlides={
-                  contentRegistry[activeContentId]?.subsections?.find(
-                    sub => sub.id === activeSubsectionId
-                  )?.slides?.length || 0
-                }
+                totalSlides={getTotalSlides()}
+              />
+
+              {/* SlideNav - vertical slide navigation on far right */}
+              <SlideNav
+                onPrev={handleSlidePrev}
+                onNext={handleSlideNext}
+                canGoPrev={activeSlideIndex > 0}
+                canGoNext={activeSlideIndex < getTotalSlides() - 1}
               />
             </motion.div>
           </ContentNavigator>

@@ -16,21 +16,14 @@ const textStyles = {
     fontSize: 'var(--font-size-title-base)',
     fontWeight: 'var(--font-weight-medium)',
     color: 'var(--color-primary)'
-  },
-  body: {
-    fontFamily: 'var(--font-family-body)',
-    fontSize: 'var(--font-size-body-xs)',
-    fontWeight: 'var(--font-weight-regular)',
-    color: 'var(--color-primary)'
   }
 };
 
-const Tile = ({ 
+const Tile = ({
   index,
   title,
   bottomLeft,
   bottomRight,
-  body,
   className = '',
   style = {},
   icon
@@ -59,14 +52,6 @@ const Tile = ({
           {bottomLeft}
           {bottomRight}
         </div>
-      </div>
-      <div className="tile-divider" />
-      <div className="tile-body">
-        <div 
-          className="tile-body-text"
-          style={textStyles.body}
-          dangerouslySetInnerHTML={{ __html: body }}
-        />
       </div>
     </div>
   );

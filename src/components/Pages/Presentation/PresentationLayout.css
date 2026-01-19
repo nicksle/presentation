@@ -21,13 +21,18 @@
   border-right: 1px solid var(--color-inactive);
 }
 
-/* Body - right content area (70%) */
+/* Body - right content area (fills remaining space) */
 .content .body {
-  width: 70%;
   height: 100%;
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
   box-sizing: border-box;
   position: relative;
+}
+
+/* SlideNav - vertical navigation on far right */
+.content .slide-nav {
+  height: 100%;
+  flex-shrink: 0;
 }
