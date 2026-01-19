@@ -13,9 +13,9 @@ import Image from '../../ContentNavigator/ContentStack/Content/Body/BodyComponen
 import Tile from '../../ContentNavigator/ContentStack/Content/Body/BodyComponent/Tile/Tile';
 import TileRow from '../../ContentNavigator/ContentStack/Content/Body/BodyComponent/TileRow/TileRow';
 import TileColumn from '../../ContentNavigator/ContentStack/Content/Body/BodyComponent/TileColumn/TileColumn';
+import TabPanel from '../../ContentNavigator/ContentStack/Content/Body/BodyComponent/TabPanel/TabPanel';
 import Carousel from '../../Carousel/Carousel';
 import SlideCarousel from '../../ContentNavigator/ContentStack/Content/Body/SlideCarousel/SlideCarousel';
-import SlideNav from '../../ContentNavigator/ContentStack/Content/SlideNav/SlideNav';
 import CarouselItem from '../../ContentNavigator/ContentStack/Content/Body/SlideCarousel/CarouselItem/CarouselItem';
 import TemplateMedia from '../../shared/TemplateMedia/TemplateMedia';
 import Impact from '../../shared/Impact';
@@ -456,18 +456,18 @@ const PresentationContent = () => {
                 <TileColumn>
                   <Tile
                     index="01"
-                    title="Goal 1"
-                    body="Description for goal 1"
+                    title="Increase Sign-Up Completion Rate"
+                    bottomLeft={<span className="subtitle">Reduce drop-off during account creation to improve funnel conversion</span>}
                   />
                   <Tile
                     index="02"
-                    title="Goal 2"
-                    body="Description for goal 2"
+                    title="Improve User Activation"
+                    bottomLeft={<span className="subtitle">Get more users to complete onboarding and reach their first transaction</span>}
                   />
                   <Tile
                     index="03"
-                    title="Goal 3"
-                    body="Description for goal 3"
+                    title="Increase User Acquisition"
+                    bottomLeft={<span className="subtitle">Expand our reach and grow the number of new users joining TANDA</span>}
                   />
                 </TileColumn>
               )
@@ -534,24 +534,120 @@ const PresentationContent = () => {
             {
               id: 'user-interviews-1',
               index: '01',
-              title: 'User Interviews Overview',
+              title: 'User Interviews',
               content: (
-                <BodyComponent key="user-interviews-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    User interviews overview content goes here.
-                  </Text>
-                </BodyComponent>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'quick-dirty',
+                      index: '01',
+                      label: 'Quick and Dirty Interviews',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            Quick and dirty interviews content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            Quick and dirty interviews content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            Quick and dirty interviews content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            Quick and dirty interviews content goes here.
+                          </Text>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'formal',
+                      index: '02',
+                      label: 'Formal Interviews',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            Formal interviews content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            Formal interviews content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            Formal interviews content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            Formal interviews content goes here.
+                          </Text>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'survey',
+                      index: '03',
+                      label: 'User Survey',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            User survey content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            User survey content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            User survey content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            User survey content goes here.
+                          </Text>
+                        </div>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="quick-dirty"
+                />
               )
             },
             {
               id: 'user-interviews-2',
               index: '02',
-              title: 'Takeaways and Findings',
+              title: 'Findings and Takeaways',
               content: (
                 <BodyComponent key="user-interviews-2" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Interview takeaways content goes here.
-                  </Text>
+                  <TileRow>
+                    <Tile
+                      index="01"
+                      title="Complex Registration Process"
+                      bottomLeft={<span className="subtitle">Users found the account creation flow too long with too many required fields</span>}
+                    />
+                    <Tile
+                      index="02"
+                      title="Unclear Value Proposition"
+                      bottomLeft={<span className="subtitle">Users didn't understand TANDA's benefits before being asked to sign up</span>}
+                    />
+                  </TileRow>
+                  <TileRow>
+                    <Tile
+                      index="03"
+                      title="Mobile Experience Issues"
+                      bottomLeft={<span className="subtitle">Sign-up drop-off was significantly higher on mobile devices</span>}
+                    />
+                    <Tile
+                      index="04"
+                      title="Trust and Security Concerns"
+                      bottomLeft={<span className="subtitle">Users hesitated to provide personal information without clear security indicators</span>}
+                    />
+                  </TileRow>
+                  <TileRow>
+                    <Tile
+                      index="05"
+                      title="Confusing Onboarding Flow"
+                      bottomLeft={<span className="subtitle">Users who completed sign-up didn't know what to do next to reach their first transaction</span>}
+                    />
+                    <Tile
+                      index="06"
+                      title="Lack of Social Proof"
+                      bottomLeft={<span className="subtitle">Users wanted to see testimonials or evidence that others successfully use TANDA</span>}
+                    />
+                  </TileRow>
                 </BodyComponent>
               )
             }
@@ -567,11 +663,74 @@ const PresentationContent = () => {
               index: '01',
               title: 'UX Cam Session Overview',
               content: (
-                <BodyComponent key="ux-cam-session-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    UX Cam session overview content goes here.
-                  </Text>
-                </BodyComponent>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'session-1',
+                      index: '01',
+                      label: 'Session 01',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            Session 01 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            Session 01 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            Session 01 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            Session 01 content goes here.
+                          </Text>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'session-2',
+                      index: '02',
+                      label: 'Session 02',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            Session 02 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            Session 02 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            Session 02 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            Session 02 content goes here.
+                          </Text>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'session-3',
+                      index: '03',
+                      label: 'Session 03',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            Session 03 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            Session 03 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            Session 03 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            Session 03 content goes here.
+                          </Text>
+                        </div>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="session-1"
+                />
               )
             },
             {
@@ -580,9 +739,42 @@ const PresentationContent = () => {
               title: 'Takeaways and Findings',
               content: (
                 <BodyComponent key="ux-cam-session-2" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Takeaways and findings content goes here.
-                  </Text>
+                  <TileRow>
+                    <Tile
+                      index="01"
+                      title="Finding Title 01"
+                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
+                    />
+                    <Tile
+                      index="02"
+                      title="Finding Title 02"
+                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
+                    />
+                  </TileRow>
+                  <TileRow>
+                    <Tile
+                      index="03"
+                      title="Finding Title 03"
+                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
+                    />
+                    <Tile
+                      index="04"
+                      title="Finding Title 04"
+                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
+                    />
+                  </TileRow>
+                  <TileRow>
+                    <Tile
+                      index="05"
+                      title="Finding Title 05"
+                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
+                    />
+                    <Tile
+                      index="06"
+                      title="Finding Title 06"
+                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
+                    />
+                  </TileRow>
                 </BodyComponent>
               )
             }
@@ -623,11 +815,74 @@ const PresentationContent = () => {
               index: '01',
               title: 'Overview',
               content: (
-                <BodyComponent key="user-flow-audit-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Overview content goes here.
-                  </Text>
-                </BodyComponent>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'sign-up-flow',
+                      index: '01',
+                      label: 'Sign-Up Flow',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            Sign-up flow content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            Sign-up flow content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            Sign-up flow content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            Sign-up flow content goes here.
+                          </Text>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'onboarding-flow',
+                      index: '02',
+                      label: 'Onboarding Flow',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            Onboarding flow content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            Onboarding flow content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            Onboarding flow content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            Onboarding flow content goes here.
+                          </Text>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'transaction-flow',
+                      index: '03',
+                      label: 'Transaction Flow',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            Transaction flow content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            Transaction flow content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            Transaction flow content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            Transaction flow content goes here.
+                          </Text>
+                        </div>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="sign-up-flow"
+                />
               )
             },
             {
@@ -635,11 +890,17 @@ const PresentationContent = () => {
               index: '02',
               title: 'User Flow Walkthrough',
               content: (
-                <BodyComponent key="user-flow-audit-2" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    User flow walkthrough content goes here.
-                  </Text>
-                </BodyComponent>
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="User Flow 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="User Flow 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="User Flow 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             },
             {
@@ -648,9 +909,42 @@ const PresentationContent = () => {
               title: 'Takeaways',
               content: (
                 <BodyComponent key="user-flow-audit-3" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Takeaways content goes here.
-                  </Text>
+                  <TileRow>
+                    <Tile
+                      index="01"
+                      title="Takeaway Title 01"
+                      bottomLeft={<span className="subtitle">Takeaway description goes here</span>}
+                    />
+                    <Tile
+                      index="02"
+                      title="Takeaway Title 02"
+                      bottomLeft={<span className="subtitle">Takeaway description goes here</span>}
+                    />
+                  </TileRow>
+                  <TileRow>
+                    <Tile
+                      index="03"
+                      title="Takeaway Title 03"
+                      bottomLeft={<span className="subtitle">Takeaway description goes here</span>}
+                    />
+                    <Tile
+                      index="04"
+                      title="Takeaway Title 04"
+                      bottomLeft={<span className="subtitle">Takeaway description goes here</span>}
+                    />
+                  </TileRow>
+                  <TileRow>
+                    <Tile
+                      index="05"
+                      title="Takeaway Title 05"
+                      bottomLeft={<span className="subtitle">Takeaway description goes here</span>}
+                    />
+                    <Tile
+                      index="06"
+                      title="Takeaway Title 06"
+                      bottomLeft={<span className="subtitle">Takeaway description goes here</span>}
+                    />
+                  </TileRow>
                 </BodyComponent>
               )
             }
@@ -687,11 +981,17 @@ const PresentationContent = () => {
               index: '01',
               title: 'Unclear Email Sign Up',
               content: (
-                <BodyComponent key="technical-friction-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Unclear email sign up content goes here.
-                  </Text>
-                </BodyComponent>
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Unclear Email Sign Up 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Unclear Email Sign Up 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Unclear Email Sign Up 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             },
             {
@@ -699,11 +999,17 @@ const PresentationContent = () => {
               index: '02',
               title: 'Bugs that Prevented Successful Sign Ups',
               content: (
-                <BodyComponent key="technical-friction-2" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Bugs that prevented successful sign ups content goes here.
-                  </Text>
-                </BodyComponent>
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Bugs 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Bugs 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Bugs 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             }
           ]
@@ -718,11 +1024,17 @@ const PresentationContent = () => {
               index: '01',
               title: 'KYC Trust Issues',
               content: (
-                <BodyComponent key="trust-barriers-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    KYC trust issues content goes here.
-                  </Text>
-                </BodyComponent>
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="KYC Trust Issues 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="KYC Trust Issues 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="KYC Trust Issues 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             },
             {
@@ -730,11 +1042,17 @@ const PresentationContent = () => {
               index: '02',
               title: 'Value Proposition Gaps',
               content: (
-                <BodyComponent key="trust-barriers-2" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Value proposition gaps content goes here.
-                  </Text>
-                </BodyComponent>
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Value Proposition Gaps 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Value Proposition Gaps 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Value Proposition Gaps 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             }
           ]
@@ -749,11 +1067,17 @@ const PresentationContent = () => {
               index: '01',
               title: 'Onboarding Carousel Lacked Appeal',
               content: (
-                <BodyComponent key="lack-of-guidance-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Onboarding carousel lacked appeal content goes here.
-                  </Text>
-                </BodyComponent>
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Onboarding Carousel 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Onboarding Carousel 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Onboarding Carousel 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             },
             {
@@ -761,11 +1085,17 @@ const PresentationContent = () => {
               index: '02',
               title: 'Unclear Navigation and Direction',
               content: (
-                <BodyComponent key="lack-of-guidance-2" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Unclear navigation and direction content goes here.
-                  </Text>
-                </BodyComponent>
+                <SlideCarousel height="100%" gap={16}>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="Navigation Issues 1" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="Navigation Issues 2" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="Navigation Issues 3" />
+                  </CarouselItem>
+                </SlideCarousel>
               )
             }
           ]
@@ -785,7 +1115,7 @@ const PresentationContent = () => {
     section5: {
       id: "section5",
       index: "05",
-      title: "Strategy",
+      title: "Exploration",
       subtitle: "Planning the Approach",
       icon1: <Icon svgPath={ICON_PATHS.solidIso} size="xl" />,
       icon2: <Icon svgPath={ICON_PATHS.arrowDown} size="small" />,
@@ -801,11 +1131,74 @@ const PresentationContent = () => {
               index: '01',
               title: 'Value Proposition Brainstorm',
               content: (
-                <BodyComponent key="value-props-trust-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Value proposition brainstorm content goes here.
-                  </Text>
-                </BodyComponent>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'value-prop-1',
+                      index: '01',
+                      label: 'Value Proposition 01',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            Value proposition 01 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            Value proposition 01 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            Value proposition 01 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            Value proposition 01 content goes here.
+                          </Text>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'value-prop-2',
+                      index: '02',
+                      label: 'Value Proposition 02',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            Value proposition 02 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            Value proposition 02 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            Value proposition 02 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            Value proposition 02 content goes here.
+                          </Text>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'value-prop-3',
+                      index: '03',
+                      label: 'Value Proposition 03',
+                      content: (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
+                          <Text subtitle="Subtitle 01" style="H3">
+                            Value proposition 03 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 02" style="H3">
+                            Value proposition 03 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 03" style="H3">
+                            Value proposition 03 content goes here.
+                          </Text>
+                          <Text subtitle="Subtitle 04" style="H3">
+                            Value proposition 03 content goes here.
+                          </Text>
+                        </div>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="value-prop-1"
+                />
               )
             },
             {
@@ -1452,14 +1845,6 @@ const PresentationContent = () => {
                 slideDirection={slideDirection}
                 onScroll={handleContentScroll}
                 totalSlides={getTotalSlides()}
-              />
-
-              {/* SlideNav - vertical slide navigation on far right */}
-              <SlideNav
-                onPrev={handleSlidePrev}
-                onNext={handleSlideNext}
-                canGoPrev={activeSlideIndex > 0}
-                canGoNext={activeSlideIndex < getTotalSlides() - 1}
               />
             </motion.div>
           </ContentNavigator>

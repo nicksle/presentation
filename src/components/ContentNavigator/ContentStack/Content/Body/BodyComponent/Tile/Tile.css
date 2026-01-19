@@ -55,10 +55,32 @@
 
 .tile-head-bottom {
   width: 100%;
-  height: var(--spacing-lg);
+  height: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--color-tertiary);
+}
+
+.tile-head-bottom2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  color: var(--color-tertiary);
+}
+
+.tile-head-bottom2-icon {
+  width: var(--spacing-lg);
+  height: var(--spacing-lg);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile-head-bottom2-subtitle {
+  margin-left: 12px;
   color: var(--color-tertiary);
 }
 
