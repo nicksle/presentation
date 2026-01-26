@@ -26,6 +26,7 @@ const Tile = ({
   bottomRight,
   bottom2Icon,
   bottom2Subtitle,
+  bottom2ClassName = '',
   className = '',
   style = {},
   icon
@@ -55,7 +56,7 @@ const Tile = ({
           {bottomRight}
         </div>
         {(bottom2Icon || bottom2Subtitle) && (
-          <div className="tile-head-bottom2">
+          <div className={`tile-head-bottom2 ${bottom2ClassName}`}>
             {bottom2Icon && (
               <div className="tile-head-bottom2-icon">
                 {bottom2Icon}

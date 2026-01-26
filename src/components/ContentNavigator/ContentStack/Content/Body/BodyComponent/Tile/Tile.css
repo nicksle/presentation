@@ -23,6 +23,7 @@
 
 .tile-head {
   width: 100%;
+  height: fit-content;
   padding: var(--spacing-lg);
   display: flex;
   flex-direction: column;
@@ -47,7 +48,7 @@
 
 .tile-head-title {
   width: 100%;
-  height: var(--spacing-xxl);
+  height: fit-content;
   display: flex;
   align-items: center;
   padding-left: var(--spacing-md);
@@ -66,7 +67,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  margin-top: 16px;
+  gap: 8px;
   color: var(--color-tertiary);
 }
 
@@ -80,8 +81,25 @@
 }
 
 .tile-head-bottom2-subtitle {
-  margin-left: 12px;
   color: var(--color-tertiary);
+}
+
+.tile-head-bottom2.pain-point {
+  color: #FF4444;
+}
+
+.tile-head-bottom2.pain-point .tile-icon-svg svg {
+  color: #FF4444;
+  fill: #FF4444;
+}
+
+.tile-head-bottom2.design-opportunity {
+  color: #FFB800;
+}
+
+.tile-head-bottom2.design-opportunity .tile-icon-svg svg {
+  color: #FFB800;
+  fill: #FFB800;
 }
 
 

@@ -28,6 +28,83 @@ import SharedImage01 from '../../../assets/TANDA/Shared/01.png';
 import SharedImage02 from '../../../assets/TANDA/Shared/02.png';
 import SharedImage03 from '../../../assets/TANDA/Shared/03.png';
 
+// Section 02 - The Challenge images
+import ChallengeAnalytics01 from '../../../assets/TANDA/Presentation/02 The Challenge/01 Using Analytics/01.png';
+
+// Section 03 - Research images
+import Persona01 from '../../../assets/TANDA/Presentation/03 Research/03 Creating Personas/01.png';
+import Persona02 from '../../../assets/TANDA/Presentation/03 Research/03 Creating Personas/02.png';
+import Persona03 from '../../../assets/TANDA/Presentation/03 Research/03 Creating Personas/03.png';
+
+// Section 04 - Discovery images
+import DiscoveryTechnicalFriction01 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/01.png';
+import DiscoveryTechnicalFriction02 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/02.png';
+import DiscoveryTechnicalFriction03 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/03.png';
+import DiscoveryTechnicalFriction04 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/04.png';
+import DiscoveryTechnicalFriction05 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/05.png';
+import DiscoveryTechnicalFriction06 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/06.png';
+import DiscoveryTechnicalFriction07 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/07.png';
+import DiscoveryTechnicalFriction08 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/08.png';
+import DiscoveryTechnicalFriction09 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/09.png';
+import DiscoveryTechnicalFriction10 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/10.png';
+import DiscoveryTechnicalFriction11 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/11.png';
+import DiscoveryTechnicalFriction12 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/12.mov';
+import DiscoveryTechnicalFriction13 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/13.png';
+import DiscoveryTechnicalFriction14 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/14.png';
+import DiscoveryTechnicalFriction15 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/15.png';
+import DiscoveryTechnicalFriction16 from '../../../assets/TANDA/Presentation/04 Discovery/01 Technical Friction/16.mov';
+
+// Value Proposition images and videos
+import ValueProp01 from '../../../assets/TANDA/Presentation/05 Exploration/01 Value Props/01.png';
+import ValueProp02 from '../../../assets/TANDA/Presentation/05 Exploration/01 Value Props/02.png';
+import ValueProp03 from '../../../assets/TANDA/Presentation/05 Exploration/01 Value Props/03.png';
+import ValueProp04 from '../../../assets/TANDA/Presentation/05 Exploration/01 Value Props/04.png';
+import ValueProp05 from '../../../assets/TANDA/Presentation/05 Exploration/01 Value Props/05.png';
+import ValueProp06 from '../../../assets/TANDA/Presentation/05 Exploration/01 Value Props/06.mov';
+
+// Section 06 - Strategy videos and images
+import Strategy01 from '../../../assets/TANDA/Presentation/06 Strategy/01.mp4';
+import Strategy02 from '../../../assets/TANDA/Presentation/06 Strategy/02.mov';
+import Strategy03 from '../../../assets/TANDA/Presentation/06 Strategy/03.mov';
+import Strategy04 from '../../../assets/TANDA/Presentation/06 Strategy/04.mov';
+import Strategy05 from '../../../assets/TANDA/Presentation/06 Strategy/05.png';
+import Strategy06 from '../../../assets/TANDA/Presentation/06 Strategy/06.png';
+import Strategy07 from '../../../assets/TANDA/Presentation/06 Strategy/07.png';
+import Strategy08 from '../../../assets/TANDA/Presentation/06 Strategy/08.png';
+import Strategy09 from '../../../assets/TANDA/Presentation/06 Strategy/09.png';
+import Strategy10 from '../../../assets/TANDA/Presentation/06 Strategy/10.png';
+import Strategy11 from '../../../assets/TANDA/Presentation/06 Strategy/11.png';
+import Strategy12 from '../../../assets/TANDA/Presentation/06 Strategy/12.png';
+import Strategy13 from '../../../assets/TANDA/Presentation/06 Strategy/13.png';
+import Strategy14 from '../../../assets/TANDA/Presentation/06 Strategy/14.png';
+import Strategy15 from '../../../assets/TANDA/Presentation/06 Strategy/15.png';
+import Strategy16 from '../../../assets/TANDA/Presentation/06 Strategy/16.png';
+import Strategy17 from '../../../assets/TANDA/Presentation/06 Strategy/17.png';
+import Strategy18 from '../../../assets/TANDA/Presentation/06 Strategy/18.png';
+import Strategy19 from '../../../assets/TANDA/Presentation/06 Strategy/19.png';
+import Strategy20 from '../../../assets/TANDA/Presentation/06 Strategy/20.png';
+import Strategy21 from '../../../assets/TANDA/Presentation/06 Strategy/21.png';
+import Strategy22 from '../../../assets/TANDA/Presentation/06 Strategy/22.png';
+import Strategy23 from '../../../assets/TANDA/Presentation/06 Strategy/23.png';
+import Strategy24 from '../../../assets/TANDA/Presentation/06 Strategy/24.png';
+import Strategy25 from '../../../assets/TANDA/Presentation/06 Strategy/25.png';
+import Strategy26 from '../../../assets/TANDA/Presentation/06 Strategy/26.png';
+import Strategy27 from '../../../assets/TANDA/Presentation/06 Strategy/27.png';
+import Strategy28 from '../../../assets/TANDA/Presentation/06 Strategy/28.mov';
+import Strategy29 from '../../../assets/TANDA/Presentation/06 Strategy/29.mov';
+import Strategy30 from '../../../assets/TANDA/Presentation/06 Strategy/30.png';
+import Strategy31 from '../../../assets/TANDA/Presentation/06 Strategy/31.png';
+import Strategy32 from '../../../assets/TANDA/Presentation/06 Strategy/32.mov';
+import Strategy33 from '../../../assets/TANDA/Presentation/06 Strategy/33.png';
+import Strategy34 from '../../../assets/TANDA/Presentation/06 Strategy/34.png';
+import Strategy35 from '../../../assets/TANDA/Presentation/06 Strategy/35.png';
+import Strategy36 from '../../../assets/TANDA/Presentation/06 Strategy/36.png';
+import Strategy37 from '../../../assets/TANDA/Presentation/06 Strategy/37.png';
+import Strategy38 from '../../../assets/TANDA/Presentation/06 Strategy/38.png';
+import Strategy39 from '../../../assets/TANDA/Presentation/06 Strategy/39.png';
+import Strategy40 from '../../../assets/TANDA/Presentation/06 Strategy/40.png';
+import Strategy41 from '../../../assets/TANDA/Presentation/06 Strategy/41.png';
+
 const PresentationContent = () => {
   const [activeContentId, setActiveContentId] = useState('section1');
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -323,11 +400,13 @@ const PresentationContent = () => {
                   </BodyComponent>
                   <SlideCarousel height="100%" gap={16}>
                     <CarouselItem>
-                      <img src={SharedImage01} alt="TANDA slide 1" />
-                      <img src={SharedImage02} alt="TANDA slide 1b" />
+                      <img src={Strategy39} alt="TANDA Thumbnail 1" />
                     </CarouselItem>
                     <CarouselItem>
-                      <img src={SharedImage02} alt="TANDA slide 2" />
+                      <img src={Strategy40} alt="TANDA Thumbnail 2" />
+                    </CarouselItem>
+                    <CarouselItem>
+                      <img src={Strategy41} alt="TANDA Thumbnail 3" />
                     </CarouselItem>
                   </SlideCarousel>
                 </>
@@ -404,28 +483,25 @@ const PresentationContent = () => {
               title: 'Using Analytics to Identify the Problem',
               content: (
                 <>
-                  <SlideCarousel>
-                    <CarouselItem>
-                      <img src={SharedImage01} alt="Analytics slide 1" />
-                    </CarouselItem>
-                    <CarouselItem>
-                      <img src={SharedImage02} alt="Analytics slide 2" />
-                    </CarouselItem>
-                  </SlideCarousel>
-                  <TileRow>
-                    <Tile
-                      index="01"
-                      title="Sign Up Rate"
-                    />
-                    <Tile
-                      index="02"
-                      title="Activation Rate"
-                    />
-                    <Tile
-                      index="03"
-                      title="Onboarding Time"
-                    />
-                  </TileRow>
+                  <BodyComponent key="problem-1-image" style={{ gridTemplateColumns: '1fr' }}>
+                    <img src={Strategy38} alt="Analytics Graph" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                  </BodyComponent>
+                  <BodyComponent key="problem-1-tiles" style={{ gridTemplateColumns: '1fr' }}>
+                    <TileRow>
+                      <Tile
+                        index="01"
+                        title="Sign Up"
+                      />
+                      <Tile
+                        index="02"
+                        title="Activation"
+                      />
+                      <Tile
+                        index="03"
+                        title="Onboard Completion"
+                      />
+                    </TileRow>
+                  </BodyComponent>
                 </>
               )
             },
@@ -487,18 +563,18 @@ const PresentationContent = () => {
                 <TileColumn>
                   <Tile
                     index="01"
-                    title="Goal 1"
-                    body="Description for goal 1"
+                    title="Get Quick Access to Funds"
+                    bottomLeft={<span className="subtitle">User goal description goes here</span>}
                   />
                   <Tile
                     index="02"
-                    title="Goal 2"
-                    body="Description for goal 2"
+                    title="Improve Financial Status"
+                    bottomLeft={<span className="subtitle">User goal description goes here</span>}
                   />
                   <Tile
                     index="03"
-                    title="Goal 3"
-                    body="Description for goal 3"
+                    title="Not Worry About Money"
+                    bottomLeft={<span className="subtitle">User goal description goes here</span>}
                   />
                 </TileColumn>
               )
@@ -544,59 +620,50 @@ const PresentationContent = () => {
                       label: 'Quick and Dirty Interviews',
                       content: (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            Quick and dirty interviews content goes here.
+                          <Text subtitle="Who" style="titleBase">
+                            ~100+ mall workers and small business workers in the Bay Area.
                           </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            Quick and dirty interviews content goes here.
+                          <Text subtitle="What" style="titleBase">
+                            In-person walkthroughs of the TANDA product with informal questioning integrated within.
                           </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            Quick and dirty interviews content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            Quick and dirty interviews content goes here.
+                          <Text subtitle="Why" style="titleBase">
+                            Allows us to onboard new users and gather a baseline for our users knowledge.
                           </Text>
                         </div>
                       )
                     },
                     {
-                      id: 'formal',
+                      id: 'formal-interviews',
                       index: '02',
                       label: 'Formal Interviews',
                       content: (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            Formal interviews content goes here.
+                          <Text subtitle="Who" style="titleBase">
+                            50 New TANDA Users. 30 Successful Activated Users, 10 Successful Sign Ups, 10 Churned Users.
                           </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            Formal interviews content goes here.
+                          <Text subtitle="What" style="titleBase">
+                            30 minute interviews with users. Goals were to understand their experience going through the Onboarding flow.
                           </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            Formal interviews content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            Formal interviews content goes here.
+                          <Text subtitle="Why" style="titleBase">
+                            Allows deeper insights into reasonings for user actions and identify commonalities between the different groups.
                           </Text>
                         </div>
                       )
                     },
                     {
-                      id: 'survey',
+                      id: 'user-surveys',
                       index: '03',
-                      label: 'User Survey',
+                      label: 'User Surveys',
                       content: (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            User survey content goes here.
+                          <Text subtitle="Who" style="titleBase">
+                            ~50 New TANDA Users.
                           </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            User survey content goes here.
+                          <Text subtitle="What" style="titleBase">
+                            Simple survey capturing general experience with the product and preferences.
                           </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            User survey content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            User survey content goes here.
+                          <Text subtitle="Why" style="titleBase">
+                            Provided good general insights into users preferences and feelings.
                           </Text>
                         </div>
                       )
@@ -615,37 +682,55 @@ const PresentationContent = () => {
                   <TileRow>
                     <Tile
                       index="01"
-                      title="Complex Registration Process"
-                      bottomLeft={<span className="subtitle">Users found the account creation flow too long with too many required fields</span>}
+                      title="In-Person Onboarding Drives Highest Activation"
+                      bottomLeft={<span className="subtitle">In-person onboarding had the highest activation rate</span>}
+                      bottom2Icon={<Icon svgPath={ICON_PATHS.lightbulb} size="small" />}
+                      bottom2Subtitle={<span className="subtitle">Design Opportunity</span>}
+                      bottom2ClassName="design-opportunity"
                     />
                     <Tile
                       index="02"
-                      title="Unclear Value Proposition"
-                      bottomLeft={<span className="subtitle">Users didn't understand TANDA's benefits before being asked to sign up</span>}
+                      title="Need for Thorough Product Explanation"
+                      bottomLeft={<span className="subtitle">Users preferred a thorough explanation of what TANDA is and does</span>}
+                      bottom2Icon={<Icon svgPath={ICON_PATHS.lightbulb} size="small" />}
+                      bottom2Subtitle={<span className="subtitle">Design Opportunity</span>}
+                      bottom2ClassName="design-opportunity"
                     />
                   </TileRow>
                   <TileRow>
                     <Tile
                       index="03"
-                      title="Mobile Experience Issues"
-                      bottomLeft={<span className="subtitle">Sign-up drop-off was significantly higher on mobile devices</span>}
+                      title="KYC and SSN Confusion"
+                      bottomLeft={<span className="subtitle">Questions about KYC and why SSN was required</span>}
+                      bottom2Icon={<Icon svgPath={ICON_PATHS.solidTrendingDown} size="small" />}
+                      bottom2Subtitle={<span className="subtitle">Pain Point</span>}
+                      bottom2ClassName="pain-point"
                     />
                     <Tile
                       index="04"
-                      title="Trust and Security Concerns"
-                      bottomLeft={<span className="subtitle">Users hesitated to provide personal information without clear security indicators</span>}
+                      title="Delayed Onboarding Engagement"
+                      bottomLeft={<span className="subtitle">Users did not immediately start the onboarding flow</span>}
+                      bottom2Icon={<Icon svgPath={ICON_PATHS.lightbulb} size="small" />}
+                      bottom2Subtitle={<span className="subtitle">Design Opportunity</span>}
+                      bottom2ClassName="design-opportunity"
                     />
                   </TileRow>
                   <TileRow>
                     <Tile
                       index="05"
-                      title="Confusing Onboarding Flow"
-                      bottomLeft={<span className="subtitle">Users who completed sign-up didn't know what to do next to reach their first transaction</span>}
+                      title="Friend Discovery Challenges"
+                      bottomLeft={<span className="subtitle">Can't find their friends in-app</span>}
+                      bottom2Icon={<Icon svgPath={ICON_PATHS.solidTrendingDown} size="small" />}
+                      bottom2Subtitle={<span className="subtitle">Pain Point</span>}
+                      bottom2ClassName="pain-point"
                     />
                     <Tile
                       index="06"
                       title="Lack of Social Proof"
                       bottomLeft={<span className="subtitle">Users wanted to see testimonials or evidence that others successfully use TANDA</span>}
+                      bottom2Icon={<Icon svgPath={ICON_PATHS.lightbulb} size="small" />}
+                      bottom2Subtitle={<span className="subtitle">Design Opportunity</span>}
+                      bottom2ClassName="design-opportunity"
                     />
                   </TileRow>
                 </BodyComponent>
@@ -661,118 +746,43 @@ const PresentationContent = () => {
             {
               id: 'ux-cam-session-1',
               index: '01',
-              title: 'UX Cam Session Overview',
-              content: (
-                <TabPanel
-                  items={[
-                    {
-                      id: 'session-1',
-                      index: '01',
-                      label: 'Session 01',
-                      content: (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            Session 01 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            Session 01 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            Session 01 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            Session 01 content goes here.
-                          </Text>
-                        </div>
-                      )
-                    },
-                    {
-                      id: 'session-2',
-                      index: '02',
-                      label: 'Session 02',
-                      content: (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            Session 02 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            Session 02 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            Session 02 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            Session 02 content goes here.
-                          </Text>
-                        </div>
-                      )
-                    },
-                    {
-                      id: 'session-3',
-                      index: '03',
-                      label: 'Session 03',
-                      content: (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            Session 03 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            Session 03 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            Session 03 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            Session 03 content goes here.
-                          </Text>
-                        </div>
-                      )
-                    }
-                  ]}
-                  defaultActiveId="session-1"
-                />
-              )
-            },
-            {
-              id: 'ux-cam-session-2',
-              index: '02',
               title: 'Takeaways and Findings',
               content: (
                 <BodyComponent key="ux-cam-session-2" style={{ gridTemplateColumns: '1fr' }}>
                   <TileRow>
                     <Tile
                       index="01"
-                      title="Finding Title 01"
-                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
+                      title="Login and Sign Up Flow Confusion"
+                      bottomLeft={<span className="subtitle">Confusion between the Login / Sign Up Flows</span>}
+                      bottom2Icon={<Icon svgPath={ICON_PATHS.solidTrendingDown} size="small" />}
+                      bottom2Subtitle={<span className="subtitle">Pain Point</span>}
+                      bottom2ClassName="pain-point"
                     />
                     <Tile
                       index="02"
-                      title="Finding Title 02"
-                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
+                      title="Early Circle Exploration"
+                      bottomLeft={<span className="subtitle">Users started exploring the circles table before onboarding</span>}
+                      bottom2Icon={<Icon svgPath={ICON_PATHS.lightbulb} size="small" />}
+                      bottom2Subtitle={<span className="subtitle">Design Opportunity</span>}
+                      bottom2ClassName="design-opportunity"
                     />
                   </TileRow>
                   <TileRow>
                     <Tile
                       index="03"
-                      title="Finding Title 03"
-                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
+                      title="Dead Ends Cause Abandonment"
+                      bottomLeft={<span className="subtitle">Dead ends lead to abandonment</span>}
+                      bottom2Icon={<Icon svgPath={ICON_PATHS.solidTrendingDown} size="small" />}
+                      bottom2Subtitle={<span className="subtitle">Pain Point</span>}
+                      bottom2ClassName="pain-point"
                     />
                     <Tile
                       index="04"
-                      title="Finding Title 04"
-                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
-                    />
-                  </TileRow>
-                  <TileRow>
-                    <Tile
-                      index="05"
-                      title="Finding Title 05"
-                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
-                    />
-                    <Tile
-                      index="06"
-                      title="Finding Title 06"
-                      bottomLeft={<span className="subtitle">Finding description goes here</span>}
+                      title="Missing Onboarding Redirection"
+                      bottomLeft={<span className="subtitle">No clear redirection to onboarding</span>}
+                      bottom2Icon={<Icon svgPath={ICON_PATHS.lightbulb} size="small" />}
+                      bottom2Subtitle={<span className="subtitle">Design Opportunity</span>}
+                      bottom2ClassName="design-opportunity"
                     />
                   </TileRow>
                 </BodyComponent>
@@ -792,13 +802,13 @@ const PresentationContent = () => {
               content: (
                 <SlideCarousel height="100%" gap={16}>
                   <CarouselItem>
-                    <img src={SharedImage01} alt="Persona 1" />
+                    <img src={Persona01} alt="Persona 1" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={SharedImage02} alt="Persona 2" />
+                    <img src={Persona02} alt="Persona 2" />
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={SharedImage03} alt="Persona 3" />
+                    <img src={Persona03} alt="Persona 3" />
                   </CarouselItem>
                 </SlideCarousel>
               )
@@ -811,101 +821,59 @@ const PresentationContent = () => {
           text: 'User Flow Audit',
           slides: [
             {
-              id: 'user-flow-audit-1',
-              index: '01',
-              title: 'Overview',
-              content: (
-                <TabPanel
-                  items={[
-                    {
-                      id: 'sign-up-flow',
-                      index: '01',
-                      label: 'Sign-Up Flow',
-                      content: (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            Sign-up flow content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            Sign-up flow content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            Sign-up flow content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            Sign-up flow content goes here.
-                          </Text>
-                        </div>
-                      )
-                    },
-                    {
-                      id: 'onboarding-flow',
-                      index: '02',
-                      label: 'Onboarding Flow',
-                      content: (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            Onboarding flow content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            Onboarding flow content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            Onboarding flow content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            Onboarding flow content goes here.
-                          </Text>
-                        </div>
-                      )
-                    },
-                    {
-                      id: 'transaction-flow',
-                      index: '03',
-                      label: 'Transaction Flow',
-                      content: (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            Transaction flow content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            Transaction flow content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            Transaction flow content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            Transaction flow content goes here.
-                          </Text>
-                        </div>
-                      )
-                    }
-                  ]}
-                  defaultActiveId="sign-up-flow"
-                />
-              )
-            },
-            {
               id: 'user-flow-audit-2',
-              index: '02',
+              index: '01',
               title: 'User Flow Walkthrough',
               content: (
                 <SlideCarousel height="100%" gap={16}>
                   <CarouselItem>
-                    <img src={SharedImage01} alt="User Flow 1" />
+                    <div style={{ display: 'flex', gap: '16px', width: '100%', height: '100%' }}>
+                      <img src={SharedImage01} alt="User Flow 1-1" style={{ flex: 1, height: '100%', objectFit: 'contain' }} />
+                      <img src={SharedImage02} alt="User Flow 1-2" style={{ flex: 1, height: '100%', objectFit: 'contain' }} />
+                    </div>
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={SharedImage02} alt="User Flow 2" />
+                    <div style={{ display: 'flex', gap: '16px', width: '100%', height: '100%' }}>
+                      <img src={SharedImage01} alt="User Flow 2-1" style={{ flex: 1, height: '100%', objectFit: 'contain' }} />
+                      <img src={SharedImage02} alt="User Flow 2-2" style={{ flex: 1, height: '100%', objectFit: 'contain' }} />
+                    </div>
                   </CarouselItem>
                   <CarouselItem>
-                    <img src={SharedImage03} alt="User Flow 3" />
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', gap: '16px', width: '100%', height: '100%' }}>
+                      <img src={SharedImage01} alt="User Flow 3-1" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                      <img src={SharedImage02} alt="User Flow 3-2" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                      <img src={SharedImage03} alt="User Flow 3-3" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                      <img src={SharedImage01} alt="User Flow 3-4" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div style={{ display: 'flex', gap: '16px', width: '100%', height: '100%' }}>
+                      <img src={SharedImage01} alt="User Flow 4-1" style={{ flex: 1, height: '100%', objectFit: 'contain' }} />
+                      <img src={SharedImage02} alt="User Flow 4-2" style={{ flex: 1, height: '100%', objectFit: 'contain' }} />
+                      <img src={SharedImage03} alt="User Flow 4-3" style={{ flex: 1, height: '100%', objectFit: 'contain' }} />
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="User Flow 5" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="User Flow 6" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage03} alt="User Flow 7" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage01} alt="User Flow 8" />
+                  </CarouselItem>
+                  <CarouselItem>
+                    <img src={SharedImage02} alt="User Flow 9" />
                   </CarouselItem>
                 </SlideCarousel>
               )
             },
             {
               id: 'user-flow-audit-3',
-              index: '03',
+              index: '02',
               title: 'Takeaways',
               content: (
                 <BodyComponent key="user-flow-audit-3" style={{ gridTemplateColumns: '1fr' }}>
@@ -981,17 +949,51 @@ const PresentationContent = () => {
               index: '01',
               title: 'Unclear Email Sign Up',
               content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Unclear Email Sign Up 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Unclear Email Sign Up 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Unclear Email Sign Up 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'email-signup-tab-1',
+                      index: '01',
+                      label: 'Confusing Login for Sign Up',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction01} alt="Sign Up Screen" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Confusing Login for Sign Up - 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Confusing Login for Sign Up - 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'email-signup-tab-2',
+                      index: '02',
+                      label: 'Email Verification Action Out of Sync',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction02} alt="Email Verification Action Out of Sync - 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction03} alt="Email Verification Action Out of Sync - 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Email Verification Action Out of Sync - 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="email-signup-tab-1"
+                />
               )
             },
             {
@@ -999,17 +1001,51 @@ const PresentationContent = () => {
               index: '02',
               title: 'Bugs that Prevented Successful Sign Ups',
               content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Bugs 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Bugs 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Bugs 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'bugs-tab-1',
+                      index: '01',
+                      label: 'Bug Category 01',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={SharedImage01} alt="Bug Category 01 - 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Bug Category 01 - 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Bug Category 01 - 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'bugs-tab-2',
+                      index: '02',
+                      label: 'Bug Category 02',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={SharedImage01} alt="Bug Category 02 - 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Bug Category 02 - 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Bug Category 02 - 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="bugs-tab-1"
+                />
               )
             }
           ]
@@ -1024,17 +1060,94 @@ const PresentationContent = () => {
               index: '01',
               title: 'KYC Trust Issues',
               content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="KYC Trust Issues 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="KYC Trust Issues 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="KYC Trust Issues 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'context-kyc',
+                      index: '01',
+                      label: 'Providing Context Before the KYC Flow Increases Trust',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <video src={DiscoveryTechnicalFriction12} controls style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction05} alt="Context Before KYC Flow - 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Context Before KYC Flow - 3" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Context Before KYC Flow - 4" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'visual-security',
+                      index: '02',
+                      label: 'Visual Security Signals Build Trust',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction13} alt="Visual Security Signals - 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction14} alt="Visual Security Signals - 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction15} alt="Visual Security Signals - 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'progressive-form',
+                      index: '03',
+                      label: 'Progressive Form Input Lowers Cognitive Load',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction04} alt="Progressive Form Input - 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Progressive Form Input - 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Progressive Form Input - 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'failure-states',
+                      index: '04',
+                      label: 'Failure States Lead to Immediate Churn',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction06} alt="Failure States - 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction07} alt="Failure States - 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction08} alt="Failure States - 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="context-kyc"
+                />
               )
             },
             {
@@ -1042,17 +1155,71 @@ const PresentationContent = () => {
               index: '02',
               title: 'Value Proposition Gaps',
               content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Value Proposition Gaps 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Value Proposition Gaps 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Value Proposition Gaps 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'delaying-core-value',
+                      index: '01',
+                      label: 'Users do not immediately understand TANDA',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={SharedImage01} alt="Delaying Core Value 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Delaying Core Value 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Delaying Core Value 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'circle-discovery',
+                      index: '02',
+                      label: 'Circle Discovery Hidden Behind Onboarding Forms',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <video src={DiscoveryTechnicalFriction16} controls style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Circle Discovery 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Circle Discovery 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'personalized-value',
+                      index: '04',
+                      label: 'Personalized Value Demonstrations Drives Motivation',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={SharedImage01} alt="Personalized Value 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Personalized Value 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Personalized Value 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="delaying-core-value"
+                />
               )
             }
           ]
@@ -1067,17 +1234,62 @@ const PresentationContent = () => {
               index: '01',
               title: 'Onboarding Carousel Lacked Appeal',
               content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Onboarding Carousel 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Onboarding Carousel 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Onboarding Carousel 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'onboarding-lacks-engagement',
+                      index: '01',
+                      label: 'Onboarding Lacks Engagement',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction03} alt="Onboarding Lacks Engagement - 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Onboarding Lacks Engagement - 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Onboarding Lacks Engagement - 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'onboarding-bloated',
+                      index: '02',
+                      label: 'Onboarding Flow is Bloated and Too Restricted',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction09} alt="Onboarding Flow Bloated - 1" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'no-clear-cta',
+                      index: '03',
+                      label: 'No Clear CTA or Actions to Take',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction10} alt="No Clear CTA - 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={DiscoveryTechnicalFriction11} alt="No Clear CTA - 2" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="onboarding-lacks-engagement"
+                />
               )
             },
             {
@@ -1085,17 +1297,51 @@ const PresentationContent = () => {
               index: '02',
               title: 'Unclear Navigation and Direction',
               content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Navigation Issues 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Navigation Issues 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Navigation Issues 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'confusing-navigation',
+                      index: '01',
+                      label: 'Confusing Navigation Patterns',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={SharedImage01} alt="Confusing Navigation Patterns - 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Confusing Navigation Patterns - 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Confusing Navigation Patterns - 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'lack-of-direction',
+                      index: '02',
+                      label: 'Lack of Clear Direction for New Users',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={SharedImage01} alt="Lack of Clear Direction - 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Lack of Clear Direction - 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Lack of Clear Direction - 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="confusing-navigation"
+                />
               )
             }
           ]
@@ -1134,70 +1380,83 @@ const PresentationContent = () => {
                 <TabPanel
                   items={[
                     {
-                      id: 'value-prop-1',
+                      id: 'financial-goals',
                       index: '01',
-                      label: 'Value Proposition 01',
+                      label: 'Financial Goals',
                       content: (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            Value proposition 01 content goes here.
+                        <>
+                          <Text subtitle="Achieve your financial goals faster" style="titleBase">
+                            Highlights specific outcomes like vacations, emergency funds, or down payments
                           </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            Value proposition 01 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            Value proposition 01 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            Value proposition 01 content goes here.
-                          </Text>
-                        </div>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={ValueProp01} alt="Financial Goals" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
                       )
                     },
                     {
-                      id: 'value-prop-2',
+                      id: 'community-savings',
                       index: '02',
-                      label: 'Value Proposition 02',
+                      label: 'Community Savings',
                       content: (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            Value proposition 02 content goes here.
+                        <>
+                          <Text subtitle="Save together with friends and family" style="titleBase">
+                            Focuses on social connection and collective wealth building
                           </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            Value proposition 02 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            Value proposition 02 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            Value proposition 02 content goes here.
-                          </Text>
-                        </div>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={ValueProp02} alt="Community Savings" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
                       )
                     },
                     {
-                      id: 'value-prop-3',
+                      id: 'quick-cash-access',
                       index: '03',
-                      label: 'Value Proposition 03',
+                      label: 'Quick Cash Access',
                       content: (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
-                          <Text subtitle="Subtitle 01" style="H3">
-                            Value proposition 03 content goes here.
+                        <>
+                          <Text subtitle="Access emergency funds when you need them" style="titleBase">
+                            Emphasizes immediate financial relief and speed
                           </Text>
-                          <Text subtitle="Subtitle 02" style="H3">
-                            Value proposition 03 content goes here.
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={ValueProp03} alt="Quick Cash Access" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'flexible-contributions',
+                      index: '04',
+                      label: 'Flexible Contributions',
+                      content: (
+                        <>
+                          <Text subtitle="Save at your own pace" style="titleBase">
+                            Emphasizes control and lack of rigid requirements
                           </Text>
-                          <Text subtitle="Subtitle 03" style="H3">
-                            Value proposition 03 content goes here.
-                          </Text>
-                          <Text subtitle="Subtitle 04" style="H3">
-                            Value proposition 03 content goes here.
-                          </Text>
-                        </div>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={ValueProp04} alt="Flexible Contributions" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
                       )
                     }
                   ]}
-                  defaultActiveId="value-prop-1"
+                  defaultActiveId="financial-goals"
                 />
               )
             },
@@ -1206,11 +1465,83 @@ const PresentationContent = () => {
               index: '02',
               title: 'Trust Signals Brainstorm',
               content: (
-                <BodyComponent key="value-props-trust-2" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Trust signals brainstorm content goes here.
-                  </Text>
-                </BodyComponent>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'security-badges',
+                      index: '01',
+                      label: 'Security Badges',
+                      content: (
+                        <>
+                          <Text subtitle="Security Badges" style="titleBase">
+                            Description for security badges goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={Strategy30} alt="Security 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy31} alt="Security 2" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'trust-indicators',
+                      index: '02',
+                      label: 'Trust Indicators',
+                      content: (
+                        <>
+                          <Text subtitle="Trust Indicators" style="titleBase">
+                            Description for trust indicators goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Trust Indicators 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Trust Indicators 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Trust Indicators 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'verification-methods',
+                      index: '03',
+                      label: 'Verification Methods',
+                      content: (
+                        <>
+                          <Text subtitle="Verification Methods" style="titleBase">
+                            Description for verification methods goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Verification Methods 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Verification Methods 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Verification Methods 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="security-badges"
+                />
               )
             }
           ]
@@ -1225,17 +1556,86 @@ const PresentationContent = () => {
               index: '01',
               title: 'Identify Points of Need',
               content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Points of need 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Points of need 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Points of need 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'sign-up-screen',
+                      index: '01',
+                      label: 'Sign Up Screen',
+                      content: (
+                        <>
+                          <Text subtitle="Sign Up Screen" style="titleBase">
+                            Description for sign up screen point of need goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={ValueProp05} alt="Sign Up Screen 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Sign Up Screen 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Sign Up Screen 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'onboarding',
+                      index: '02',
+                      label: 'Onboarding',
+                      content: (
+                        <>
+                          <Text subtitle="Onboarding" style="titleBase">
+                            Description for onboarding point of need goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={Strategy27} alt="Onboard Locked" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Onboarding 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Onboarding 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'joining-circles',
+                      index: '03',
+                      label: 'Joining / Finding Circles',
+                      content: (
+                        <>
+                          <Text subtitle="Joining / Finding Circles" style="titleBase">
+                            Description for joining/finding circles point of need goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Joining/Finding Circles 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Joining/Finding Circles 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Joining/Finding Circles 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="sign-up-screen"
+                />
               )
             },
             {
@@ -1243,17 +1643,102 @@ const PresentationContent = () => {
               index: '02',
               title: 'Exploring Education Options',
               content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Education options 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Education options 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Education options 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'tooltips',
+                      index: '01',
+                      label: 'Tooltips',
+                      content: (
+                        <>
+                          <Text subtitle="Tooltips" style="titleBase">
+                            Description for tooltips goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Tooltips 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Tooltips 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Tooltips 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'mock-products',
+                      index: '02',
+                      label: 'Mock Products',
+                      content: (
+                        <>
+                          <Text subtitle="Mock Products" style="titleBase">
+                            Description for mock products goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <video src={Strategy28} controls style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <video src={Strategy29} controls style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'guided-walkthroughs',
+                      index: '03',
+                      label: 'Guided Walkthroughs',
+                      content: (
+                        <>
+                          <Text subtitle="Guided Walkthroughs" style="titleBase">
+                            Description for guided walkthroughs goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <video src={Strategy32} controls style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'faq-links',
+                      index: '04',
+                      label: 'FAQ Links',
+                      content: (
+                        <>
+                          <Text subtitle="FAQ Links" style="titleBase">
+                            Description for FAQ links goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="FAQ Links 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="FAQ Links 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="FAQ Links 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="tooltips"
+                />
               )
             }
           ]
@@ -1268,53 +1753,210 @@ const PresentationContent = () => {
               index: '01',
               title: 'Sign Up Options',
               content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Sign up options 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Sign up options 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Sign up options 3" />
-                  </CarouselItem>
-                </SlideCarousel>
-              )
-            },
-            {
-              id: 'sign-up-flow-2',
-              index: '02',
-              title: 'Sign Up Flow Rearrangement',
-              content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Sign up flow 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Sign up flow 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Sign up flow 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'option-1',
+                      index: '01',
+                      label: 'Added Sign Up Options',
+                      content: (
+                        <>
+                          <Text subtitle="Added Sign Up Options" style="titleBase">
+                            Added sign up options description goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Added Sign Up Options - Slide 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Added Sign Up Options - Slide 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Added Sign Up Options - Slide 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'option-2',
+                      index: '02',
+                      label: 'Simplified Login / Sign Up',
+                      content: (
+                        <>
+                          <Text subtitle="Simplified Login / Sign Up" style="titleBase">
+                            Simplified login / sign up description goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <video src={ValueProp06} controls style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Simplified Login - Slide 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Simplified Login - Slide 3" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Simplified Login - Slide 4" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'option-3',
+                      index: '03',
+                      label: 'Progressive Disclosure Forms',
+                      content: (
+                        <>
+                          <Text subtitle="Progressive Disclosure Forms" style="titleBase">
+                            Progressive disclosure forms description goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={Strategy22} alt="Progressive Disclosure - Slide 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy23} alt="Progressive Disclosure - Slide 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy24} alt="Progressive Disclosure - Slide 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="option-1"
+                />
               )
             },
             {
               id: 'sign-up-flow-3',
-              index: '03',
+              index: '02',
               title: 'Add User Segmentation Survey',
               content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Segmentation survey 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Segmentation survey 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Segmentation survey 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'segmentation-overview',
+                      index: '01',
+                      label: 'Overview',
+                      content: (
+                        <>
+                          <Text subtitle="Overview" style="titleBase">
+                            Description for segmentation survey overview goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Segmentation Overview 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Segmentation Overview 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Segmentation Overview 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'investor',
+                      index: '02',
+                      label: 'Investor',
+                      content: (
+                        <>
+                          <Text subtitle="Investor" style="titleBase">
+                            Description for investor segment goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={Strategy06} alt="Investor 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy07} alt="Investor 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy08} alt="Investor 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'saver',
+                      index: '03',
+                      label: 'Saver',
+                      content: (
+                        <>
+                          <Text subtitle="Saver" style="titleBase">
+                            Description for saver segment goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={Strategy09} alt="Saver 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy10} alt="Saver 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy11} alt="Saver 3" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy12} alt="Saver 4" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy13} alt="Saver 5" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'spender',
+                      index: '04',
+                      label: 'Spender',
+                      content: (
+                        <>
+                          <Text subtitle="Spender" style="titleBase">
+                            Description for spender segment goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={Strategy14} alt="Spender 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy15} alt="Spender 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy16} alt="Spender 3" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy17} alt="Spender 4" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="segmentation-overview"
+                />
               )
             }
           ]
@@ -1329,11 +1971,81 @@ const PresentationContent = () => {
               index: '01',
               title: 'Intuitive Onboarding and Navigation',
               content: (
-                <BodyComponent key="onboarding-navigation-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Onboarding and Navigation" style="B1">
-                    Creating an intuitive first-time experience.
-                  </Text>
-                </BodyComponent>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'onboarding-carousels',
+                      index: '01',
+                      label: 'Onboarding Carousels',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={Strategy18} alt="Onboarding Carousels 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={Strategy19} alt="Onboarding Carousels 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={Strategy20} alt="Onboarding Carousels 3" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={Strategy21} alt="Onboarding Carousels 4" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'onboarding-types',
+                      index: '02',
+                      label: 'Onboarding Types',
+                      content: (
+                        <>
+                          <Text subtitle="Onboarding Types" style="titleBase">
+                            Description for onboarding types goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={Strategy25} alt="Onboarding Types 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy26} alt="Onboarding Types 2" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'navigation-explorations',
+                      index: '03',
+                      label: 'Navigation Explorations',
+                      content: (
+                        <>
+                          <Text subtitle="Navigation Explorations" style="titleBase">
+                            Description for navigation explorations goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Navigation Explorations 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Navigation Explorations 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Navigation Explorations 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="onboarding-carousels"
+                />
               )
             }
           ]
@@ -1365,161 +2077,323 @@ const PresentationContent = () => {
           text: 'Efficient Sign Up that Provides Context and Motivation',
           slides: [
             {
-              id: 'sign-up-context-1',
-              index: '01',
-              title: 'Overview',
-              content: (
-                <BodyComponent key="sign-up-context-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Overview content goes here.
-                  </Text>
-                </BodyComponent>
-              )
-            },
-            {
               id: 'sign-up-context-2',
-              index: '02',
-              title: 'Sign Up Screen Carousel',
+              index: '01',
+              title: 'User Motivation During Sign Up',
               content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Sign up screen 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Sign up screen 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Sign up screen 3" />
-                  </CarouselItem>
-                </SlideCarousel>
-              )
-            },
-            {
-              id: 'sign-up-context-3',
-              index: '03',
-              title: 'Sign Up Options',
-              content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Sign up options 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Sign up options 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Sign up options 3" />
-                  </CarouselItem>
-                </SlideCarousel>
-              )
-            },
-            {
-              id: 'sign-up-context-4',
-              index: '04',
-              title: 'Simplified Email Sign Up',
-              content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Email sign up 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Email sign up 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Email sign up 3" />
-                  </CarouselItem>
-                </SlideCarousel>
-              )
-            },
-            {
-              id: 'sign-up-context-5',
-              index: '05',
-              title: 'Segmentation Survey',
-              content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Segmentation survey 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Segmentation survey 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Segmentation survey 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'sign-up-screen',
+                      index: '01',
+                      label: 'Sign Up Screen Carousel',
+                      content: (
+                        <>
+                          <Text subtitle="Sign Up Screen Carousel" style="titleBase">
+                            Description for sign up screen carousel goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <video src={Strategy01} controls style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Sign up screen 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Sign up screen 3" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Sign up screen 4" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'sso-options',
+                      index: '02',
+                      label: 'SSO Sign Up Options',
+                      content: (
+                        <>
+                          <Text subtitle="SSO Sign Up Options" style="titleBase">
+                            Description for SSO sign up options goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="SSO options 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="SSO options 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="SSO options 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'email-signup',
+                      index: '03',
+                      label: 'Simplified Email Sign Up',
+                      content: (
+                        <>
+                          <Text subtitle="Simplified Email Sign Up" style="titleBase">
+                            Description for simplified email sign up goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Email sign up 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Email sign up 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Email sign up 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'segmentation-survey',
+                      index: '04',
+                      label: 'Segmentation Survey',
+                      content: (
+                        <>
+                          <Text subtitle="Segmentation Survey" style="titleBase">
+                            Description for segmentation survey goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={Strategy33} alt="Segmentation survey 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy34} alt="Segmentation survey 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy35} alt="Segmentation survey 3" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy36} alt="Segmentation survey 4" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={Strategy37} alt="Segmentation survey 5" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="sign-up-screen"
+                />
               )
             }
           ]
         },
         {
-          id: 'trust-barriers-solution',
+          id: 'onboarding-education-solution',
           index: '02',
-          text: 'Trust Barriers and Unclear Value Prevented Activation',
+          text: 'Guided Onboarding with In-App Education',
           slides: [
             {
-              id: 'trust-barriers-solution-1',
+              id: 'onboarding-education-solution-2',
               index: '01',
-              title: 'Overview',
+              title: 'Reworked Onboarding to Secure Retention',
               content: (
-                <BodyComponent key="trust-barriers-solution-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text style="B1">
-                    Overview content goes here.
-                  </Text>
-                </BodyComponent>
-              )
-            },
-            {
-              id: 'trust-barriers-solution-2',
-              index: '02',
-              title: 'Integrate Education In-App',
-              content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Education in-app 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Education in-app 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Education in-app 3" />
-                  </CarouselItem>
-                </SlideCarousel>
-              )
-            },
-            {
-              id: 'trust-barriers-solution-3',
-              index: '03',
-              title: 'Reworked Onboarding',
-              content: (
-                <SlideCarousel height="100%" gap={16}>
-                  <CarouselItem>
-                    <img src={SharedImage01} alt="Reworked onboarding 1" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage02} alt="Reworked onboarding 2" />
-                  </CarouselItem>
-                  <CarouselItem>
-                    <img src={SharedImage03} alt="Reworked onboarding 3" />
-                  </CarouselItem>
-                </SlideCarousel>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'present-value-direction',
+                      index: '01',
+                      label: 'Present Value and Direction',
+                      content: (
+                        <>
+                          <Text subtitle="Present Value and Direction" style="titleBase">
+                            Description for present value and direction goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <video src={Strategy04} controls style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Present Value and Direction 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Present Value and Direction 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'late-bind-onboarding',
+                      index: '02',
+                      label: 'Late Bind Onboarding',
+                      content: (
+                        <>
+                          <Text subtitle="Late Bind Onboarding" style="titleBase">
+                            Description for late bind onboarding goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={Strategy05} alt="Late Bind Onboarding 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Late Bind Onboarding 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Late Bind Onboarding 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'proper-redirection',
+                      index: '04',
+                      label: 'Proper Redirection',
+                      content: (
+                        <>
+                          <Text subtitle="Proper Redirection" style="titleBase">
+                            Description for proper redirection goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <video src={Strategy02} controls style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <video src={Strategy03} controls style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="present-value-direction"
+                />
               )
             }
           ]
         },
         {
-          id: 'guidance-navigation-solution',
+          id: 'trust-clarity-solution',
           index: '03',
-          text: 'New Users Lacked Guidance and Navigation',
+          text: 'Earning Trust through Context and Clarity',
           slides: [
             {
-              id: 'guidance-navigation-solution-1',
+              id: 'trust-clarity-solution-2',
               index: '01',
-              title: 'New Users Lacked Guidance and Navigation',
+              title: 'Building Trust and Providing Context',
               content: (
-                <BodyComponent key="guidance-navigation-solution-1" style={{ gridTemplateColumns: '1fr' }}>
-                  <Text subtitle="Guidance and Navigation Solution" style="B1">
-                    Providing clear guidance and navigation for new users.
-                  </Text>
-                </BodyComponent>
+                <TabPanel
+                  items={[
+                    {
+                      id: 'introduce-kyc-context',
+                      index: '01',
+                      label: 'Introduce KYC to Provide Context',
+                      content: (
+                        <div style={{ flex: 1, minHeight: 0 }}>
+                          <SlideCarousel height="100%" gap={16}>
+                            <CarouselItem>
+                              <img src={Strategy30} alt="Security 1" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage02} alt="Introduce KYC Context 2" />
+                            </CarouselItem>
+                            <CarouselItem>
+                              <img src={SharedImage03} alt="Introduce KYC Context 3" />
+                            </CarouselItem>
+                          </SlideCarousel>
+                        </div>
+                      )
+                    },
+                    {
+                      id: 'progressive-disclosure',
+                      index: '02',
+                      label: 'Progressive Disclosure',
+                      content: (
+                        <>
+                          <Text subtitle="Progressive Disclosure" style="titleBase">
+                            Description for progressive disclosure goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={Strategy22} alt="Progressive Disclosure 1" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'trust-signals',
+                      index: '03',
+                      label: 'Trust Signals',
+                      content: (
+                        <>
+                          <Text subtitle="Trust Signals" style="titleBase">
+                            Description for trust signals goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Trust Signals 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Trust Signals 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Trust Signals 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    },
+                    {
+                      id: 'improved-fail-states',
+                      index: '04',
+                      label: 'Improved Fail States',
+                      content: (
+                        <>
+                          <Text subtitle="Improved Fail States" style="titleBase">
+                            Description for improved fail states goes here.
+                          </Text>
+                          <div style={{ flex: 1, minHeight: 0 }}>
+                            <SlideCarousel height="100%" gap={16}>
+                              <CarouselItem>
+                                <img src={SharedImage01} alt="Improved Fail States 1" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage02} alt="Improved Fail States 2" />
+                              </CarouselItem>
+                              <CarouselItem>
+                                <img src={SharedImage03} alt="Improved Fail States 3" />
+                              </CarouselItem>
+                            </SlideCarousel>
+                          </div>
+                        </>
+                      )
+                    }
+                  ]}
+                  defaultActiveId="introduce-kyc-context"
+                />
               )
             }
           ]
@@ -1703,7 +2577,7 @@ const PresentationContent = () => {
                   <span className="S1">2024</span>
                 </div>
                 <h2 className="casestudy-title-text H2">
-                  My Portfolio Presentation
+                  Improving User Education and Building Trust During Onboarding to Increase User Growth
                 </h2>
                 <div className="casestudy-title-bottom">
                   <span className="S1">Portfolio</span>
@@ -1712,7 +2586,7 @@ const PresentationContent = () => {
               </div>
               <div className="casestudy-divider"></div>
               <p className="casestudy-description">
-                Welcome to my portfolio presentation. This showcases my design work, process, and the impact of my projects. Scroll down to explore more.
+                We redesigned the sign-up and onboarding flow to reduce drop-off and improve activation. A late-binding approach provides context at key moments, educates users on features, and builds trust—lowering barriers and guiding users effectively from the start.
               </p>
               <div className="casestudy-read-more" onClick={handleScrollToContent}>
                 <Icon svgPath={ICON_PATHS.arrowDown} size="large" />
@@ -1794,7 +2668,7 @@ const PresentationContent = () => {
               <NavTabItem id="section2" index="02" title="The Challenge" />
               <NavTabItem id="section3" index="03" title="Research" />
               <NavTabItem id="section4" index="04" title="Discovery" />
-              <NavTabItem id="section5" index="05" title="Strategy" />
+              <NavTabItem id="section5" index="05" title="Exploration" />
               <NavTabItem id="section6" index="06" title="Solutions" />
               <NavTabItem id="section7" index="07" title="Conclusion" />
             </TabNav>
